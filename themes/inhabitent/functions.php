@@ -7,6 +7,38 @@
  * @package RED_Starter_Theme
  */
 
+
+/** 
+* Changes the default wordpress logo in Log In page
+*/
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
+            padding-bottom: 30px;
+			background-size: 220px !important; width: 230px !important;background-position: bottom !important;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+/**
+* Changes the link values of the Log In Logo
+*/
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Inhabitent';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+
+
+
+
 if ( ! function_exists( 'red_starter_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -44,6 +76,7 @@ add_action( 'after_setup_theme', 'red_starter_setup' );
  *
  * @global int $content_width
  */
+
 function red_starter_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'red_starter_content_width', 640 );
 }
