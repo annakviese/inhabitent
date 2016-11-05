@@ -421,6 +421,15 @@ textarea {
   .site-header a img {
     width: 40%; }
 
+.header-search fieldset {
+  border: none; }
+  .header-search fieldset button {
+    visibility: hidden; }
+  .header-search fieldset .fa {
+    font-size: 1.5rem; }
+  .header-search fieldset input[type="search"] {
+    border: none; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -441,7 +450,9 @@ a {
   margin-right: 2rem;
   display: -ms-flexbox;
   display: flex;
-  width: auto; }
+  width: auto;
+  -ms-flex-align: baseline;
+      align-items: baseline; }
   .main-navigation li {
     margin-right: 2rem;
     text-transform: uppercase; }

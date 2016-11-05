@@ -15,4 +15,19 @@
 		}
 }
 
+.header-search fieldset {
+	border: none;
+	
+		button {
+			visibility: hidden;
+		}
+		.fa {
+			font-size: 1.5rem;
+		}
+
+		input[type="search"] {
+			border:none;
+		}
+}
+
 
