@@ -101,6 +101,10 @@ function red_starter_widgets_init() {
 add_action( 'widgets_init', 'red_starter_widgets_init' );
 
 /**
+*
+*/
+
+/**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
 function red_starter_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {

@@ -26,34 +26,17 @@ a {
 
 /* Menus */
 
-.site-header{
-	width: 100%;
+.main-navigation {
+	margin-right: 2rem;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: baseline;
-	border-bottom: 1px solid lightgrey;
-	padding: 1rem;
-	height: auto;
-	/*position: fixed;*/
-	background-color: white;
+	width: auto;
 
-		a img{
-			width: 40%;
-		}
-
-
-		.main-navigation {
-			margin-right: 2rem;
-			display: flex;
-			width: auto;
-
-			li {
-				margin-right: 2rem;
-				text-transform: uppercase;
-			}
-
+	li {
+		margin-right: 2rem;
+		text-transform: uppercase;
 	}
+
+}
 
 
 	ul {
@@ -118,7 +101,7 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
-}
+
 
 /* Small menu. */
 .menu-toggle,
