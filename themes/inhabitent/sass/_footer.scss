@@ -5,7 +5,11 @@
 .site-footer {
     width: 100%;
     height: auto;
-    background-color: black;
+
+    background: url(../../images/dark-wood@2x.png);
+   
+    padding: 2rem;
+
 }
 
 .footer-content{
@@ -51,6 +55,15 @@
     .footer-logo {
         flex: 25% 0 0;
     }
-
     
 }
+
+ .site-info {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
