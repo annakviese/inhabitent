@@ -50,10 +50,43 @@
 	width: 70%;
 }
 
-.entry-header img{
+.entry-header {
+	position: relative;
+
+	h2 {
+    background-color: #248a83;
+    font-size: 2.3rem;
+    padding: 1rem;
+    position: absolute;
+    margin-top: 3rem;
+    max-width: 80%;
+    top: 0;
+	}
+
+	a {
+	color: white;
+	}
+
+	img{
 	width: 1000px;
 	height: auto;
+	}
 }
+
+.entry-meta {
+	position: absolute;
+	background-color: #248a83;
+    color: white;
+    padding: 0.5rem 0.5rem;
+	margin-bottom: 0.49rem;
+    right: 0;
+	bottom: 0;
+    text-transform: uppercase;
+} 
+
+
+
+
 
 .page-links {
 	clear: both;

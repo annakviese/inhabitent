@@ -403,6 +403,16 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.banner-image {
+  width: 100%;
+  height: 400px;
+  background-color: grey; }
+
+.site-content {
+  width: 1120px; }
+  .site-content .site-main {
+    padding: 10% 10%; }
+
 .site-header {
   width: 100%;
   display: -ms-flexbox;
@@ -435,11 +445,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: li #248A83; }
   a:visited {
-    color: purple; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #2f1339; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -631,9 +641,31 @@ a {
 .content-area {
   width: 70%; }
 
-.entry-header img {
-  width: 1000px;
-  height: auto; }
+.entry-header {
+  position: relative; }
+  .entry-header h2 {
+    background-color: #248a83;
+    font-size: 2.3rem;
+    padding: 1rem;
+    position: absolute;
+    margin-top: 3rem;
+    max-width: 80%;
+    top: 0; }
+  .entry-header a {
+    color: white; }
+  .entry-header img {
+    width: 1000px;
+    height: auto; }
+
+.entry-meta {
+  position: absolute;
+  background-color: #248a83;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0.49rem;
+  right: 0;
+  bottom: 0;
+  text-transform: uppercase; }
 
 .page-links {
   clear: both;
