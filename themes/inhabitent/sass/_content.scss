@@ -53,8 +53,9 @@
 .entry-header {
 	position: relative;
 
-	h2 {
+	h2 , .entry-title {
     background-color: #248a83;
+	color: white;
     font-size: 2.3rem;
     padding: 1rem;
     position: absolute;
@@ -82,9 +83,29 @@
     right: 0;
 	bottom: 0;
     text-transform: uppercase;
+	display: flex;
 } 
 
 
+.entry-footer {
+	display: flex;
+	text-transform: uppercase;
+
+	.cat-links {
+		flex: 40% 0 0;
+	
+
+		a {
+			display: inline-block;
+		}
+	}
+	.tags-links {
+		flex: 40% 0 0;
+		a {
+			display: inline-block;
+		}
+	}
+}
 
 
 

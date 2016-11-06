@@ -445,7 +445,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: li #248A83; }
+  color: #248A83; }
   a:visited {
     color: #248A83; }
   a:hover, a:focus, a:active {
@@ -643,8 +643,9 @@ a {
 
 .entry-header {
   position: relative; }
-  .entry-header h2 {
+  .entry-header h2, .entry-header .entry-title {
     background-color: #248a83;
+    color: white;
     font-size: 2.3rem;
     padding: 1rem;
     position: absolute;
@@ -665,7 +666,24 @@ a {
   margin-bottom: 0.49rem;
   right: 0;
   bottom: 0;
+  text-transform: uppercase;
+  display: -ms-flexbox;
+  display: flex; }
+
+.entry-footer {
+  display: -ms-flexbox;
+  display: flex;
   text-transform: uppercase; }
+  .entry-footer .cat-links {
+    -ms-flex: 40% 0 0;
+        flex: 40% 0 0; }
+    .entry-footer .cat-links a {
+      display: inline-block; }
+  .entry-footer .tags-links {
+    -ms-flex: 40% 0 0;
+        flex: 40% 0 0; }
+    .entry-footer .tags-links a {
+      display: inline-block; }
 
 .page-links {
   clear: both;
