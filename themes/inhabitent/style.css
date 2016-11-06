@@ -611,11 +611,29 @@ a {
   margin: 1.5em 0 0; }
 
 .site-content {
-  width: 1120px; }
+  width: 1120px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-left: 10%; }
+  .site-content .site-main {
+    -ms-flex: 70% 0 0;
+        flex: 70% 0 0;
+    padding: 10% 10% 0% 0%;
+    border-right: 1px solid lightgrey; }
+  .site-content .widget-area {
+    -ms-flex: 20% 0 0;
+        flex: 20% 0 0; }
 
 .content-area {
-  width: 70%;
-  margin: 2rem 2rem; }
+  width: 70%; }
+
+.entry-header img {
+  width: 1000px;
+  height: auto; }
 
 .page-links {
   clear: both;
