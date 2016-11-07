@@ -24,7 +24,7 @@ get_header(); ?>
                     <p>Get back to nature with all the tools and toys
                         you need to enjoy the great outdoors
                     </p>
-                    <button class "shop"> do stuff </button>
+                    <a href = "#" class="button"> do stuff </a>
                 </div> <!-- shop offers --> 
 
         <!--eat stuff section-->
@@ -33,7 +33,7 @@ get_header(); ?>
                     <p>Get back to nature with all the tools and toys
                         you need to enjoy the great outdoors
                     </p>
-                    <button class "shop"> do stuff </button>
+                    <a href = "#" class="button"> eat stuff </a>
                 </div> <!-- shop offers -->
 
         <!--sleep stuff section--> 
@@ -42,7 +42,7 @@ get_header(); ?>
                     <p>Get back to nature with all the tools and toys
                         you need to enjoy the great outdoors
                     </p>
-                    <button class "shop"> do stuff </button>
+                    <a href = "#" class="button"> sleep stuff </a>
                 </div> <!-- shop offers -->
 
          <!--wear stuff section--> 
@@ -51,16 +51,37 @@ get_header(); ?>
                     <p>Get back to nature with all the tools and toys
                         you need to enjoy the great outdoors
                     </p>
-                    <button class "shop"> do stuff </button>
+                    <a href = "#" class="button"> wear stuff </a>
                 </div> <!-- shop offers -->
             </div> <!-- shop stuff -->
             </section> <!-- shopping section ends -->
 
+
+
 <!--Section with the last 3 journal entries -->
 
             <section class = "journal">
-               
-            </section>
+                <h1>inhabitent journal</h1>
+                <div class = "journal-posts">
+                <?php          
+                    //Get 3 recent published posts in descending order
+                    $args = array( 'numberposts' => '3', 'order' => 'DESC','post_status' => 'publish' );
+                    $recent_posts = wp_get_recent_posts( $args );
+                    
+                    // now get the data 
+                    foreach( $recent_posts as $recent )
+                    {
+                    echo '<div class = "recent-posts">';
+                    echo '<img src="'.$recent["post_thumbnail_id"] .'"/>';
+                    echo get_the_post_thumbnail($recent["ID"]);
+                    echo $recent["post_title"]. '</a>';
+                    echo '<p class="homedate">'. $recent["post_date"]. '</p>';
+                    echo '<p class="homecomments">'. $recent["comment_count"]. " comments". '</p>';
+                    echo '</div>';
+                    }
+                    ?>
+                </div> <!-- journal posts -->
+            </section> <!-- end of journal section -->
 
             <section class = "adventures">
             </section>

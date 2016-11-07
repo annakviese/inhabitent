@@ -414,6 +414,9 @@ textarea {
   -ms-flex-pack: center;
       justify-content: center; }
 
+/*=============================================================
+* SHOP STUFF SECTION 
+=============================================================*/
 .shopping {
   height: 80vh;
   width: 84vw;
@@ -422,7 +425,7 @@ textarea {
     text-align: center;
     text-transform: uppercase; }
   .shopping .shop-stuff {
-    margin: 2%;
+    margin: 4% 2%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -434,14 +437,42 @@ textarea {
       -ms-flex: 23% 0 0;
           flex: 23% 0 0;
       padding: 2rem;
-      border: 1px solid lightgrey;
+      border: 2px solid #a1a1a1;
       text-align: center; }
       .shopping .shop-stuff .shop-offers img {
         width: 20%; }
-      .shopping .shop-stuff .shop-offers button {
-        padding: 1rem;
-        background-color: green;
+      .shopping .shop-stuff .shop-offers .button {
+        /*padding: 1rem;*/
+        color: white;
+        margin: auto auto;
+        padding: 0.8rem;
+        background-color: #248A83;
         text-transform: uppercase; }
+
+/*=============================================================
+* JOURNAL SECTION
+=============================================================*/
+.journal {
+  height: 80vh;
+  width: 84vw;
+  margin: 0 auto; }
+  .journal h1 {
+    text-align: center;
+    text-transform: uppercase; }
+  .journal .journal-posts {
+    margin: 4% 2%;
+    display: -ms-flexbox;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .journal .journal-posts .recent-posts {
+      width: 30%;
+      -ms-flex: 31% 0 0;
+          flex: 31% 0 0; }
+      .journal .journal-posts .recent-posts img {
+        width: auto;
+        height: 200px; }
 
 .site-header {
   width: 100%;
