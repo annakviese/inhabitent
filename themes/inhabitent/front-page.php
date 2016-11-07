@@ -85,8 +85,35 @@ get_header(); ?>
             </section> <!-- end of journal section -->
 
 <!--adventure section -->
-            <section class = "adventures">
+            <section class = "adventures-section">
                 <h1>adventures</h1>
+                <div class = "adventures">
+                    
+                    <div class = "left-box">
+                        <a href="#">Getting Back to Nature in a Canoe </a>
+                    </div>
+
+                    <div class = "right-side">
+                        <div class = "upper-right-box">
+                            <a href="#">A Night with Friends at the Beach</a>
+    
+                        </div>
+                        <div class = "bottom-right-section">
+                            <div class = "left">
+                                <a href="#">Taking in the View at Big Mountain</a>
+                            </div>
+
+                            <div class = "right">
+                                <a href="#">Star - Gazing at the Night Sky</a>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+
+                    
+                </div>
             </section>
 			        
 	</div><!-- #secondary -->
