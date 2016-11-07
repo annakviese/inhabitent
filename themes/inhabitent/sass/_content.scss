@@ -28,18 +28,22 @@
 }
 
 .site-content {
-	width: 1120px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-left: 10%;
 
 	.site-main {
+		margin-top: 5rem;
+		margin-left: 10%;
+    	padding: 10% 10% 0 0;
 		flex: 70% 0 0;
 		padding: 10% 10% 0% 0%;
 		border-right: 1px solid lightgrey;
 	}
 	.widget-area {
+		margin-top: 5rem;
+		margin-right: 5rem;
+	    padding: 10% 1% 0 0;
 		flex: 20% 0 0;
 		
 	}
@@ -89,7 +93,7 @@
 
 .entry-footer {
 	display: flex;
-	text-transform: uppercase;
+	
 
 	.cat-links {
 		flex: 40% 0 0;
