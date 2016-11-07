@@ -8,4 +8,37 @@
     justify-content: center;
 }
 
+.shopping {
+    height: 80vh;
+    width: 84vw;
+    margin: 0 auto;
 
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .shop-stuff {
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+        .shop-offers {
+        width: 20%;
+        flex: 23% 0 0;
+        padding: 2rem;
+        border: 1px solid lightgrey;
+        text-align: center;
+            img {
+                width: 20%;
+            }
+            
+            button {
+                padding: 1rem;
+                background-color: green;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

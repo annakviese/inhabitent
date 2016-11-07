@@ -414,6 +414,35 @@ textarea {
   -ms-flex-pack: center;
       justify-content: center; }
 
+.shopping {
+  height: 80vh;
+  width: 84vw;
+  margin: 0 auto; }
+  .shopping h1 {
+    text-align: center;
+    text-transform: uppercase; }
+  .shopping .shop-stuff {
+    margin: 2%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .shopping .shop-stuff .shop-offers {
+      width: 20%;
+      -ms-flex: 23% 0 0;
+          flex: 23% 0 0;
+      padding: 2rem;
+      border: 1px solid lightgrey;
+      text-align: center; }
+      .shopping .shop-stuff .shop-offers img {
+        width: 20%; }
+      .shopping .shop-stuff .shop-offers button {
+        padding: 1rem;
+        background-color: green;
+        text-transform: uppercase; }
+
 .site-header {
   width: 100%;
   display: -ms-flexbox;
