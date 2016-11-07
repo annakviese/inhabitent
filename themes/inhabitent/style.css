@@ -472,7 +472,7 @@ textarea {
           flex: 31% 0 0; }
       .journal .journal-posts .recent-posts img {
         width: auto;
-        height: 200px; }
+        /*height: 200px;*/ }
 
 .site-header {
   width: 100%;
@@ -785,8 +785,8 @@ a {
   .footer-content p {
     color: white; }
   .footer-content .contact {
-    -ms-flex: 25% 0 0;
-        flex: 25% 0 0; }
+    -ms-flex: 20% 0 0;
+        flex: 20% 0 0; }
     .footer-content .contact a {
       color: white; }
     .footer-content .contact .fa {
@@ -802,8 +802,12 @@ a {
     .footer-content .business-hours span {
       font-weight: bold; }
   .footer-content .footer-logo {
-    -ms-flex: 25% 0 0;
-        flex: 25% 0 0; }
+    -ms-flex: 40% 0 0;
+        flex: 40% 0 0;
+    padding-left: 10%;
+    padding-top: 5%; }
+    .footer-content .footer-logo img {
+      width: 80%; }
 
 .site-info {
   width: 100%;

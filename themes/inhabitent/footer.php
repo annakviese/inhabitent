@@ -34,10 +34,11 @@
 					</div>
 					<div class = "footer-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                       		<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-dark.svg'; ?>" class="logo" alt="Inhabitent company logo">
+                       		<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-text.svg'; ?>" class="logo" alt="Inhabitent company logo"/>
                    		</a>
 					</div>
 				</div>
+				
 				
 				<div class="site-info">
 					<!--<a href="<?php echo esc_url( 'https://inhabitent.org/' ); ?>"><?php printf( esc_html( 'Copyright &copy; 2016 Inhabitent' ), '' ); ?></a>-->

@@ -74,7 +74,7 @@ get_header(); ?>
                     echo '<div class = "recent-posts">';
                     echo '<img src="'.$recent["post_thumbnail_id"] .'"/>';
                     echo get_the_post_thumbnail($recent["ID"]);
-                    echo $recent["post_title"]. '</a>';
+                    echo '<a>' . $recent["post_title"]. '</a>';
                     echo '<p class="homedate">'. $recent["post_date"]. '</p>';
                     echo '<p class="homecomments">'. $recent["comment_count"]. " comments". '</p>';
                     echo '</div>';
