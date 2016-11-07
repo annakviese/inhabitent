@@ -78,7 +78,33 @@
                 width: auto;
                 /*height: 200px;*/
             }
+             .button {
+                /*padding: 1rem;*/
+                color: white;
+                padding: 0.8rem;
+                width: 9rem;
+                background-color: #248A83;
+                text-transform: uppercase;
+
+            }
         }
 
     }
+}
+
+
+/*=============================================================
+* ADVENTURE SECTION
+=============================================================*/
+
+.adventures {
+    height: 80vh;
+    width: 84vw;
+    margin: 4% auto;
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+   
 }

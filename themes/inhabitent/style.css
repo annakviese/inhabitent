@@ -473,6 +473,24 @@ textarea {
       .journal .journal-posts .recent-posts img {
         width: auto;
         /*height: 200px;*/ }
+      .journal .journal-posts .recent-posts .button {
+        /*padding: 1rem;*/
+        color: white;
+        padding: 0.8rem;
+        width: 9rem;
+        background-color: #248A83;
+        text-transform: uppercase; }
+
+/*=============================================================
+* ADVENTURE SECTION
+=============================================================*/
+.adventures {
+  height: 80vh;
+  width: 84vw;
+  margin: 4% auto; }
+  .adventures h1 {
+    text-align: center;
+    text-transform: uppercase; }
 
 .site-header {
   width: 100%;

@@ -77,13 +77,16 @@ get_header(); ?>
                     echo '<a>' . $recent["post_title"]. '</a>';
                     echo '<p class="homedate">'. $recent["post_date"]. '</p>';
                     echo '<p class="homecomments">'. $recent["comment_count"]. " comments". '</p>';
+                    echo '<a href =' . get_permalink( $recent['ID'] ) .' class="button"> read entry </a>';
                     echo '</div>';
                     }
                     ?>
                 </div> <!-- journal posts -->
             </section> <!-- end of journal section -->
 
+<!--adventure section -->
             <section class = "adventures">
+                <h1>adventures</h1>
             </section>
 			        
 	</div><!-- #secondary -->
