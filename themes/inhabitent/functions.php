@@ -141,3 +141,13 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
+/**
+* Changes the [...] in the excerpt to Read More 
+*/
+
+function wpdocs_excerpt_more( $more ) {
+    return '<a href="'.get_the_permalink().'" rel="nofollow">Read More -> </a>';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );

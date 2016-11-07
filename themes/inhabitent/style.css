@@ -501,12 +501,23 @@ textarea {
       flex-wrap: wrap;
   width: 100%;
   height: 500px; }
+  .adventures .button {
+    /*padding: 1rem;*/
+    color: white;
+    padding: 0.8rem;
+    width: auto;
+    background-color: #248A83;
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid #a1a1a1; }
 
 .left-box {
   background-image: url("../../images/adventures/canoe-girl.jpg");
   background-size: cover;
   -ms-flex: 50% 0 0;
       flex: 50% 0 0; }
+  .left-box a {
+    font-size: 3rem; }
 
 .right-side {
   display: -ms-flexbox;
@@ -523,6 +534,8 @@ textarea {
   background-position: center;
   background-size: cover;
   /*flex: 50% 0 0; */ }
+  .upper-right-box a {
+    font-size: 2.5rem; }
 
 .bottom-right-section {
   display: -ms-flexbox;
@@ -536,12 +549,16 @@ textarea {
     background-size: cover;
     -ms-flex: 50% 0 0;
         flex: 50% 0 0; }
+    .bottom-right-section .left a {
+      font-size: 2rem; }
   .bottom-right-section .right {
     background-image: url("../../images/adventures/night-sky.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     -ms-flex: 50% 0 0;
         flex: 50% 0 0; }
+    .bottom-right-section .right a {
+      font-size: 2rem; }
 
 .site-header {
   width: 100%;
