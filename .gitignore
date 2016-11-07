@@ -10,7 +10,6 @@
 plugins/*
 !plugins/inhabitent-functionality/
 !plugins/business-hours-widget/
-!plugins/red-functionality-master/
 
 # Ignore everything in "themes" except the active theme. #
 themes/*
