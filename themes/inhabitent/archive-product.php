@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying archive pages.
- * Template Name: Inhabitent Product Archive 
+ *
  * @package RED_Starter_Theme
  */
 
@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+			<p>archive-product.php</p>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
