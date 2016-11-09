@@ -9,14 +9,11 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<p>single-archive.php</p>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/archive', 'single' ); ?>
+			<?php get_template_part( 'template-parts/product-archive', 'single' ); ?>
 
-			<!-- previous and next post navigation >-->
-			<?php the_post_navigation(); ?>
 
 			<div class = "social-buttons">
 				<button type = "button" class = "social-btn">
@@ -44,5 +41,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
