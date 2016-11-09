@@ -29,6 +29,7 @@
 
 // .site-content {
 	.content-area {
+	display: flex;
 	justify-content: space-between;
 	width: 1120px;
 	margin-left: auto;
@@ -36,21 +37,19 @@
 
 	.site-main {
 		margin-top: 5rem;
-		width: 60%;
+		width: 70%;
 		padding: 10% 5%;
 		
 	}
-}
 
-.site-content {	
-	display: flex;
-	flex-wrap: wrap;
-
-.widget-area {
+	.widget-area {
+		margin-top: 5rem;
+		padding: 10% 5%;
 		flex: 30% 0 0;
 		border-left: 1px solid lightgrey;
 	}
 }
+
 
 
 

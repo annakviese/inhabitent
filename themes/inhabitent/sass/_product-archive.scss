@@ -1,10 +1,27 @@
+.shop-wrapper {
+    margin-top: 5rem;
+    padding: 10% 5%;
+    text-align: center;
+}
+
 .archive-area{
     display: flex;
     flex-wrap: wrap;
     height: auto;
     width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    justify-content: space-around;
+
+        .product-post {
+        flex: 25% 0 0;
+        border: 1px solid lightgrey;
+
+        img {
+            height: auto;
+            width: 150px;
+        }
+        }
 }
 
-.product-post {
-    flex: 20% 0 0;
-}

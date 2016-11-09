@@ -560,17 +560,30 @@ textarea {
     .bottom-right-section .right a {
       font-size: 2rem; }
 
+.shop-wrapper {
+  margin-top: 5rem;
+  padding: 10% 5%;
+  text-align: center; }
+
 .archive-area {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: auto;
-  width: 1120px; }
-
-.product-post {
-  -ms-flex: 20% 0 0;
-      flex: 20% 0 0; }
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .archive-area .product-post {
+    -ms-flex: 25% 0 0;
+        flex: 25% 0 0;
+    border: 1px solid lightgrey; }
+    .archive-area .product-post img {
+      height: auto;
+      width: 150px; }
 
 .about-hero {
   background-repeat: no-repeat;
@@ -582,9 +595,6 @@ textarea {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
-
-.content-area {
-  text-align: center; }
 
 .site-header {
   width: 100%;
@@ -794,6 +804,8 @@ a {
   margin: 1.5em 0 0; }
 
 .content-area {
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
   width: 1120px;
@@ -801,15 +813,11 @@ a {
   margin-right: auto; }
   .content-area .site-main {
     margin-top: 5rem;
-    width: 60%;
+    width: 70%;
     padding: 10% 5%; }
-
-.site-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .site-content .widget-area {
+  .content-area .widget-area {
+    margin-top: 5rem;
+    padding: 10% 5%;
     -ms-flex: 30% 0 0;
         flex: 30% 0 0;
     border-left: 1px solid lightgrey; }
