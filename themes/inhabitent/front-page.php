@@ -10,51 +10,26 @@ get_header(); ?>
                      <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>" class="banner-img" alt="inhabitent circle logo" />
             </section>
 
-            <!--<div id="primary" class="content-area">
-		    <main id="main" class="site-main" role="main">-->
+            <div id="primary" class="content-area">
+		    <main id="main" class="site-main" role="main">
 
 <!--Section to shop for offers -->
             
             <section class = "shopping">
                 <h1> Shop stuff </h1>
             <div class = "shop-stuff">
-        <!--do stuff section-->
-                <div class = "shop-offers">
-                    <img src="<?php echo get_template_directory_uri() . '/images/product-icons/do.svg'; ?>" alt="simple map icon" />
-                    <p>Get back to nature with all the tools and toys
-                        you need to enjoy the great outdoors
-                    </p>
-                    <a href = "#" class="button"> do stuff </a>
-                </div> <!-- shop offers --> 
-
-        <!--eat stuff section-->
-                <div class = "shop-offers">
-                    <img src="<?php echo get_template_directory_uri() . '/images/product-icons/eat.svg'; ?>" alt="simple map icon" />
-                    <p>Get back to nature with all the tools and toys
-                        you need to enjoy the great outdoors
-                    </p>
-                    <a href = "#" class="button"> eat stuff </a>
-                </div> <!-- shop offers -->
-
-        <!--sleep stuff section--> 
-                <div class = "shop-offers">
-                    <img src="<?php echo get_template_directory_uri() . '/images/product-icons/sleep.svg'; ?>" alt="simple map icon" />
-                    <p>Get back to nature with all the tools and toys
-                        you need to enjoy the great outdoors
-                    </p>
-                    <a href = "#" class="button"> sleep stuff </a>
-                </div> <!-- shop offers -->
-
-         <!--wear stuff section--> 
-                <div class = "shop-offers">
-                 <img src="<?php echo get_template_directory_uri() . '/images/product-icons/wear.svg'; ?>" alt="simple map icon" />
-                    <p>Get back to nature with all the tools and toys
-                        you need to enjoy the great outdoors
-                    </p>
-                    <a href = "#" class="button"> wear stuff </a>
-                </div> <!-- shop offers -->
-            </div> <!-- shop stuff -->
-            </section> <!-- shopping section ends -->
+        
+        <?php    
+           $terms = get_terms('product_type');   
+            foreach ($terms as $term) {
+      
+      $url = get_term_link ($term->slug , 'product_type');
+      echo "<div class = 'shop-offers'><p> $term->description </p> ";
+      echo "<a href= '$url' class='button'> $term->name </a> </div>";
+}
+?>
+      </div> <!-- shop stuff -->
+      </section> <!--shopping section ends -->
 
 
 
@@ -64,38 +39,38 @@ get_header(); ?>
                 <h1>inhabitent journal</h1>
                 <div class = "journal-posts">
                 <?php          
-                //     //Get 3 recent published posts in descending order
-                //     $args = array( 'numberposts' => '3', 'order' => 'DESC','post_status' => 'publish' );
-                //     $recent_posts = wp_get_recent_posts( $args );
+                    //Get 3 recent published posts in descending order
+                    $args = array( 'numberposts' => '3', 'order' => 'DESC','post_status' => 'publish' );
+                    $recent_posts = wp_get_recent_posts( $args );
                     
-                //     // now get the data 
-                //     foreach( $recent_posts as $recent )
-                //     {
-                //     echo '<div class = "recent-posts">';
-                //     echo '<img src="'.$recent["post_thumbnail_id"] .'"/>';
-                //     echo get_the_post_thumbnail($recent["ID"]);
-                //     echo '<a>' . $recent["post_title"]. '</a>';
-                //     echo '<p class="homedate">'. $recent["post_date"]. '</p>';
-                //     echo '<p class="homecomments">'. $recent["comment_count"]. " comments". '</p>';
-                //     echo '<a href =' . get_permalink( $recent['ID'] ) .' class="button"> read entry </a>';
-                //     echo '</div>';
-                //     }
-                $args = array( 'numberposts' => '3', 'order' => 'DESC','post_status' => 'publish' );
-                $product_posts = get_posts ( $args);
-                ?>
-                <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); 
-                 {
-                    echo '<div class = "product-posts">';
-                    echo '<img src="'.$post["post_thumbnail_id"] .'"/>';
-                    echo get_the_post_thumbnail($post["ID"]);
-                    echo '<a>' . $post["post_title"]. '</a>';
-                    echo '<p class="homedate">'. $post["post_date"]. '</p>';
-                    echo '<p class="homecomments">'. $post["comment_count"]. " comments". '</p>';
+                    // now get the data 
+                    foreach( $recent_posts as $recent )
+                    {
+                    echo '<div class = "recent-posts">';
+                    echo '<img src="'.$recent["post_thumbnail_id"] .'"/>';
+                    echo get_the_post_thumbnail($recent["ID"]);
+                    echo '<a>' . $recent["post_title"]. '</a>';
+                    echo '<p class="homedate">'. $recent["post_date"]. '</p>';
+                    echo '<p class="homecomments">'. $recent["comment_count"]. " comments". '</p>';
                     echo '<a href =' . get_permalink( $recent['ID'] ) .' class="button"> read entry </a>';
                     echo '</div>';
                     }
+                $args = array( 'numberposts' => '3', 'order' => 'DESC','post_status' => 'publish' );
+                $product_posts = get_posts ( $args);
                 ?>
-                <?php endforeach; wp_reset_postdata(); ?>
+                <!--  <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); 
+                //  {
+                //     echo '<div class = "product-posts">';
+                //     echo '<img src="'.$post["post_thumbnail_id"] .'"/>';
+                //     echo get_the_post_thumbnail($post["ID"]);
+                //     echo '<a>' . $post["post_title"]. '</a>';
+                //     echo '<p class="homedate">'. $post["post_date"]. '</p>';
+                //     echo '<p class="homecomments">'. $post["comment_count"]. " comments". '</p>';
+                //     echo '<a href =' . get_permalink( $recent['ID'] ) .' class="button"> read entry </a>';
+                //     echo '</div>';
+                //     }
+                // ?>
+                // <?php endforeach; wp_reset_postdata(); ?>
                     
 
                 </div> <!-- journal posts -->

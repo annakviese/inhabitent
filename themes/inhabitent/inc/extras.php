@@ -20,3 +20,20 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+
+/**
+*	Custom About Page background image 
+*/ 
+function my_styles_method() {
+		if(!is_page_template('about.php')) {
+			return;
+		}
+	$url = CFS()->get('about_background_image');
+	$custom_css = "
+					.about-hero{
+						background-image: url({$url});
+						}";
+				wp_add_inline_style( 'red-starter-style', $custom_css);
+}
+			add_action('wp_enqueue_scripts' , 'my_styles_method');
