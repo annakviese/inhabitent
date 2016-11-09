@@ -1,5 +1,10 @@
-.product-post {
+.archive-area{
     display: flex;
     flex-wrap: wrap;
-     width: 20%;
+    height: auto;
+    width: 1120px;
+}
+
+.product-post {
+    flex: 20% 0 0;
 }

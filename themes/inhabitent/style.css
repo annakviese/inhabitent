@@ -560,14 +560,17 @@ textarea {
     .bottom-right-section .right a {
       font-size: 2rem; }
 
-.product-post {
+.archive-area {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  height: auto;
+  width: 1120px; }
 
-.archive-content {
-  width: 20%; }
+.product-post {
+  -ms-flex: 20% 0 0;
+      flex: 20% 0 0; }
 
 .about-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/home-hero.jpg");
@@ -787,30 +790,26 @@ a {
 .entry-summary {
   margin: 1.5em 0 0; }
 
+.content-area {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+  .content-area .site-main {
+    margin-top: 5rem;
+    width: 60%;
+    padding: 10% 5%; }
+
 .site-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .site-content .site-main {
-    margin-top: 5rem;
-    margin-left: 10%;
-    padding: 10% 10% 0 0;
-    -ms-flex: 70% 0 0;
-        flex: 70% 0 0;
-    padding: 10% 10% 0% 0%;
-    border-right: 1px solid lightgrey; }
+      flex-wrap: wrap; }
   .site-content .widget-area {
-    margin-top: 5rem;
-    margin-right: 5rem;
-    padding: 10% 1% 0 0;
-    -ms-flex: 20% 0 0;
-        flex: 20% 0 0; }
-
-.content-area {
-  width: 70%; }
+    -ms-flex: 30% 0 0;
+        flex: 30% 0 0;
+    border-left: 1px solid lightgrey; }
 
 .entry-header {
   position: relative; }

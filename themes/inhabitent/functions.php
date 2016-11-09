@@ -153,22 +153,3 @@ function wpdocs_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
 
-/**
-* Changes the [...] in the excerpt to Read More 
-*/
-
-// function wp_add_inline_style( $handle, $data ) {
-//     _wp_scripts_maybe_doing_it_wrong( __FUNCTION__ );
- 
-//     if ( false !== stripos( $data, '</style>' ) ) {
-//         _doing_it_wrong( __FUNCTION__, sprintf(
-//             /* translators: 1: <style>, 2: wp_add_inline_style() */
-//             __( 'Do not pass %1$s tags to %2$s.' ),
-//             '<code>&lt;style&gt;</code>',
-//             '<code>wp_add_inline_style()</code>'
-//         ), '3.7.0' );
-//         $data = trim( preg_replace( '#<style[^>]*>(.*)</style>#is', '$1', $data ) );
-//     }
- 
-//     return wp_styles()->add_inline_style( $handle, $data );
-// }
