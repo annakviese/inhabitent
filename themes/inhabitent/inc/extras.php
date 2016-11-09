@@ -32,7 +32,7 @@ function my_styles_method() {
 	$url = CFS()->get('about_background_image');
 	$custom_css = "
 					.about-hero{
-						background-image: url({$url});
+						background-image: url({$url}),linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
 						}";
 				wp_add_inline_style( 'red-starter-style', $custom_css);
 }

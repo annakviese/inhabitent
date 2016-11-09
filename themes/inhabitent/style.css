@@ -583,6 +583,9 @@ textarea {
   -ms-flex-pack: center;
       justify-content: center; }
 
+.content-area {
+  text-align: center; }
+
 .site-header {
   width: 100%;
   display: -ms-flexbox;
