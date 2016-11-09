@@ -584,6 +584,11 @@ textarea {
       height: auto;
       width: 150px; }
 
+.post-type-archive-product .shop-stuff {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1rem; }
+
 .about-hero {
   background-repeat: no-repeat;
   background-size: cover;

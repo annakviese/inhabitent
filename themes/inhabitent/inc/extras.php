@@ -37,3 +37,15 @@ function my_styles_method() {
 				wp_add_inline_style( 'red-starter-style', $custom_css);
 }
 			add_action('wp_enqueue_scripts' , 'my_styles_method');
+
+
+/**
+*	Set product archive to 16 posts 
+*/ 
+function get_all_product_posts( $query ) {
+  if( is_post_type_archive( 'product' ) ) {
+    $query->set('posts_per_page', '16');
+        return;
+  }
+}
+add_action( 'pre_get_posts', 'get_all_product_posts' );
