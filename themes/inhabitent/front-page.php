@@ -26,8 +26,8 @@ get_header(); ?>
             
             
             $url = get_term_link ($term->slug , 'product_type');
-            echo "<div class='shopc'><img class='logotype' src=" . get_template_directory_uri() . "/images/product-type-icons/" . $term->slug . ".svg>";
-            echo "<div class = 'shop-offers'><p> $term->description </p> ";
+            echo "<div class = 'shop-offers'><img class='shop-icon' src=" . get_template_directory_uri() . "/images/product-type-icons/" . $term->slug . ".svg>";
+            echo "<p> $term->description </p> ";
             echo "<a href= '$url' class='button'> $term->name </a> </div>";
         }
         ?>
