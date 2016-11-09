@@ -11,23 +11,26 @@ get_header(); ?>
             </section>
 
             <div id="primary" class="content-area">
-		    <main id="main" class="site-main" role="main">
+		    <main id="main" class="shop-main" role="shop">
 
 <!--Section to shop for offers -->
             
             <section class = "shopping">
                 <h1> Shop stuff </h1>
+
             <div class = "shop-stuff">
-        
         <?php    
-           $terms = get_terms('product_type');   
+           $terms = get_terms('product_type');  
+
             foreach ($terms as $term) {
-      
-      $url = get_term_link ($term->slug , 'product_type');
-      echo "<div class = 'shop-offers'><p> $term->description </p> ";
-      echo "<a href= '$url' class='button'> $term->name </a> </div>";
-}
-?>
+            
+            
+            $url = get_term_link ($term->slug , 'product_type');
+            echo "<div class='shopc'><img class='logotype' src=" . get_template_directory_uri() . "/images/product-type-icons/" . $term->slug . ".svg>";
+            echo "<div class = 'shop-offers'><p> $term->description </p> ";
+            echo "<a href= '$url' class='button'> $term->name </a> </div>";
+        }
+        ?>
       </div> <!-- shop stuff -->
       </section> <!--shopping section ends -->
 

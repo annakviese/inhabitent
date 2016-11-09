@@ -419,7 +419,7 @@ textarea {
 =============================================================*/
 .shopping {
   height: 80vh;
-  width: 84vw;
+  width: 100%;
   margin: 0 auto; }
   .shopping h1 {
     text-align: center;
