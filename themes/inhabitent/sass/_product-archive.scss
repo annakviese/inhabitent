@@ -46,3 +46,17 @@
         }
 }
 
+.single-product {
+    .type-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    
+    .entry-header {
+        flex: 40% 0 0;
+    }
+    .content-wrapper {
+       flex: 40% 0 0;
+    }
+}
