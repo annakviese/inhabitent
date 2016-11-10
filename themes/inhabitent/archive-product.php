@@ -8,7 +8,9 @@
 get_header(); ?>
 		<div class = "shop-wrapper">
 			<header class="page-header">
-				<h1>SHOP</h1>
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+				?>
 			</header><!-- .page-header -->
 
 			

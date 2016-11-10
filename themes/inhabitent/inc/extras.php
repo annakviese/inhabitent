@@ -22,6 +22,7 @@ function red_starter_body_classes( $classes ) {
 add_filter( 'body_class', 'red_starter_body_classes' );
 
 
+
 /**
 *	Custom About Page background image 
 */ 
@@ -43,9 +44,27 @@ function my_styles_method() {
 *	Set product archive to 16 posts 
 */ 
 function get_all_product_posts( $query ) {
-  if( is_post_type_archive( 'product' ) ) {
+  if( is_post_type_archive( 'product' ) && !is_admin() && $query->is_main_query()) {
     $query->set('posts_per_page', '16');
-        return;
+	$query->set('orderby', 'title');
+	$query->set('order', 'ASC');
   }
+//   elseif
+  /**
+*	Set product category posts  to 4 posts 
+*/ 
 }
 add_action( 'pre_get_posts', 'get_all_product_posts' );
+
+
+function display_custom_archive_title ($title) {
+	if (is_post_type_archive ('product' )) {
+		$title = "Shop Stuff";
+	}
+	elseif (is_tax('product')){
+		$title = ""
+	}
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'display_custom_archive_title');
+
