@@ -65,10 +65,12 @@ function display_custom_archive_title ($title) {
 	if (is_post_type_archive ('product' )) {
 		$title = "Shop Stuff";
 	}
-	elseif(is_tax() ){
-	
-	}
+	elseif(is_tax() ) {
+        $title = single_term_title( '', false );
+    }
 return $title;
 }
 	
 add_filter( 'get_the_archive_title', 'display_custom_archive_title');
+
+

@@ -16,7 +16,8 @@ get_header(); ?>
 
 			<!-- previous and next post navigation >-->
 			<!--<?php the_post_navigation(); ?>-->
-
+			<button type="button" id="close-comments">Close Comments</button>
+			
 			<div class = "social-buttons">
 				<button type = "button" class = "social-btn">
 					<i class="fa fa-facebook" aria-hidden="true"> like </i>
