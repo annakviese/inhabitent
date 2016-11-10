@@ -11,15 +11,15 @@ get_header(); ?>
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
-			</header><!-- .page-header -->
 
-			
 			<!-- getting the product type names-->
 				<?php $terms = get_terms('product_type'); ?>
 				<?php foreach ($terms as $term) : ?>
 				<div class = 'shop-stuff'> <?php $url = get_term_link ($term->slug , 'product_type'); ?>
-				<a href='<?php echo $url ?>' class='button'> <?php  echo $term->name ?></a> </div>
+				<a href='<?php echo $url ?>'> <?php  echo $term->name ?></a> </div>
 				<?php endforeach; ?>
+
+				</header><!-- .page-header -->
       
 
 		<div id="primary" class="archive-area">

@@ -57,14 +57,18 @@ function get_all_product_posts( $query ) {
 add_action( 'pre_get_posts', 'get_all_product_posts' );
 
 
+
+/**
+*	Set custom archive title
+*/ 
 function display_custom_archive_title ($title) {
 	if (is_post_type_archive ('product' )) {
 		$title = "Shop Stuff";
 	}
-	elseif (is_tax('product')){
-		$title = ""
+	elseif(is_tax() ){
+	
 	}
-	return $title;
+return $title;
 }
+	
 add_filter( 'get_the_archive_title', 'display_custom_archive_title');
-
