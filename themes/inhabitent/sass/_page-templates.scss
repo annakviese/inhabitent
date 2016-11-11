@@ -5,10 +5,12 @@
 /* Front page */
 
 body {
-    font-family: "novecento", ;
+    font-family: "merriweather" , sans;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "merriweather" ;
+h1, h2, h3, h4, h5, h6 , a{
     
+    font-family: "novecento", sans ;
+    text-transform: uppercase;
 }
+
