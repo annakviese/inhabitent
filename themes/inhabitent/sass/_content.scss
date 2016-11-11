@@ -27,26 +27,27 @@
 	margin: $base__space-unit 0 0;
 }
 
-// .site-content {
-	.content-area {
-	display: flex;
-	justify-content: space-between;
+.site-content {
 	width: 1120px;
 	margin-left: auto;
 	margin-right: auto;
+}
+	.content-area {
+	display: flex;
+	justify-content: space-between;
+	
+	
 
 	.site-main {
-		margin-top: 5rem;
-		width: 70%;
-		padding: 10% 5%;
+		padding: 6% 5%;
+    	border-right: 1px solid lightgrey;
+		flex: 75% 0 0;
 		
 	}
 
 	.widget-area {
-		margin-top: 5rem;
-		padding: 10% 5%;
-		flex: 30% 0 0;
-		border-left: 1px solid lightgrey;
+		padding: 10% 0 0 5%;
+		flex: 26% 0 0;
 	}
 }
 
