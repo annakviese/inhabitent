@@ -8,37 +8,6 @@
  */
 
 
-/** 
-* Changes the default wordpress logo in Log In page
-*/
-function my_login_logo() { ?>
-    <style type="text/css">
-        #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
-            padding-bottom: 30px;
-			background-size: 280px !important; width: 280px !important;background-position: bottom !important;
-        }
-    </style>
-<?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
-
-/**
-* Changes the link values of the Log In Logo
-*/
-function my_login_logo_url() {
-    return home_url();
-}
-add_filter( 'login_headerurl', 'my_login_logo_url' );
-
-function my_login_logo_url_title() {
-    return 'Inhabitent';
-}
-add_filter( 'login_headertitle', 'my_login_logo_url_title' );
-
-
-
-
-
 if ( ! function_exists( 'red_starter_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -141,15 +110,4 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
-
-/**
-* Changes the [...] in the excerpt to Read More 
-*/
-
-function wpdocs_excerpt_more( $more ) {
-    return '<a href="'.get_the_permalink().'" rel="nofollow">Read More -> </a>';
-}
-add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
-
 
