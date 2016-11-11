@@ -12,12 +12,14 @@
 				<div class="footer-content">
 					<div class = "contact">
 						<h3>Contact Info</h3>
-						<p>
+						<p class = "email">
 							<a href="info@inhabitent.com"><i class="fa fa-envelope" aria-hidden="true"></i> info@inhabitent.com</a>
 						</p>
-						<p>
+
+						<p class = "phone">
 							<a href="tel:778-456-7891"><i class="fa fa-phone" aria-hidden="true"></i> 778-456-7891</a>
 						</p>
+						
 						<div class = "social">
 							<p><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> </p>
 							<p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </p>

@@ -16,6 +16,7 @@
 	display: none;
 }
 
+/* Archive widget */
 
 
 /* Business hours widget */
@@ -26,3 +27,17 @@
 
 /* Inhabitent Contact widget */
 
+.fa {
+	padding-right: 0.5rem;
+}
+
+/* Archive Widget */
+.widget_archive ul {
+	display: flex;
+    flex-direction: column;
+
+	li a{
+	text-transform: capitalize;
+	font-family: $main-font-family;
+	}
+}

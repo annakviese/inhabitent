@@ -39,7 +39,7 @@
 	
 
 	.site-main {
-		padding: 6% 5% 0 0;
+		padding: 6% 5% 10% 0;
     	border-right: 1px solid lightgrey;
 		flex: 75% 0 0;
 		
@@ -88,7 +88,6 @@
 .entry-content {
 
 	/*Read More Button */
-
 	 @include brand-button;
 }
 
@@ -97,10 +96,10 @@
 	position: absolute;
 	background-color: $brand-green;
     color: white;
-    padding: 0.5rem 0.5rem;
+    padding: 0.2rem 0.5rem;
 	margin-bottom: 0.49rem;
     right: 0;
-	bottom: 1px;
+	bottom: 0;
     text-transform: uppercase;
 	display: flex;
 

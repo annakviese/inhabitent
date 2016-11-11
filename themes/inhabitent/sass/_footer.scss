@@ -13,12 +13,13 @@
 }
 
 .footer-content{
+    width: $content-width;
+    margin: auto auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     h3 {
-        color: #d99054;
-        font-size: 1.5rem;
+        color: $brand-orange;
     }
     
     p {
@@ -30,6 +31,10 @@
 
         a {
             color: white;
+        }
+        .phone a{
+            font-size: 1.2rem;
+            
         }
 
         .fa {
@@ -43,10 +48,15 @@
             p {
                 padding: 0 1%;
             }
+
+            .fa {
+                font-size: 1.3rem;
+                padding-right: 5%;
+            }
         }
 
     .business-hours {
-        flex: 20% 0 0;
+        flex: 22% 0 0;
 
         span {
             font-weight: bold;
@@ -69,7 +79,7 @@
     width: 100%;
     text-align: center;
     color: white;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     margin-top: 2rem;
 }

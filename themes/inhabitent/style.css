@@ -828,11 +828,25 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+/* Archive widget */
 /* Business hours widget */
 .day-of-week {
   font-weight: bold; }
 
 /* Inhabitent Contact widget */
+.fa {
+  padding-right: 0.5rem; }
+
+/* Archive Widget */
+.widget_archive ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .widget_archive ul li a {
+    text-transform: capitalize;
+    font-family: "merriweather", serif; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -866,7 +880,7 @@ a {
   -ms-flex-pack: justify;
       justify-content: space-between; }
   .content-area .site-main {
-    padding: 6% 5% 0 0;
+    padding: 6% 5% 10% 0;
     border-right: 1px solid lightgrey;
     -ms-flex: 75% 0 0;
         flex: 75% 0 0; }
@@ -916,10 +930,10 @@ a {
   position: absolute;
   background-color: #248A83;
   color: white;
-  padding: 0.5rem 0.5rem;
+  padding: 0.2rem 0.5rem;
   margin-bottom: 0.49rem;
   right: 0;
-  bottom: 1px;
+  bottom: 0;
   text-transform: uppercase;
   display: -ms-flexbox;
   display: flex; }
@@ -968,13 +982,14 @@ a {
   padding: 2rem; }
 
 .footer-content {
+  width: 1120px;
+  margin: auto auto;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
   .footer-content h3 {
-    color: #d99054;
-    font-size: 1.5rem; }
+    color: #d99054; }
   .footer-content p {
     color: white; }
   .footer-content .contact {
@@ -982,6 +997,8 @@ a {
         flex: 20% 0 0; }
     .footer-content .contact a {
       color: white; }
+    .footer-content .contact .phone a {
+      font-size: 1.2rem; }
     .footer-content .contact .fa {
       padding: 0 1%; }
   .footer-content .social {
@@ -989,9 +1006,12 @@ a {
     display: flex; }
     .footer-content .social p {
       padding: 0 1%; }
+    .footer-content .social .fa {
+      font-size: 1.3rem;
+      padding-right: 5%; }
   .footer-content .business-hours {
-    -ms-flex: 20% 0 0;
-        flex: 20% 0 0; }
+    -ms-flex: 22% 0 0;
+        flex: 22% 0 0; }
     .footer-content .business-hours span {
       font-weight: bold; }
   .footer-content .footer-logo {
@@ -1006,7 +1026,7 @@ a {
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   margin-top: 2rem; }
 
@@ -1088,3 +1108,6 @@ p {
 
 h2 {
   font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
