@@ -11,7 +11,7 @@ get_header(); ?>
             </section>
 
             <div id="primary" class="content-area">
-		    <main id="main" class="shop-main" role="shop">
+		  <main id="main" class="shop-main" role="shop"> 
 
 <!--Section to shop for offers -->
             
