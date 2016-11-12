@@ -874,38 +874,6 @@ a {
   display: table; }
 
 /*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. */ }
-  .widget select {
-    max-width: 100%; }
-
-/* Search widget. */
-.widget_search .search-submit {
-  display: none; }
-
-/* Archive widget */
-/* Business hours widget */
-.day-of-week {
-  font-weight: bold; }
-
-/* Inhabitent Contact widget */
-.fa {
-  padding-right: 0.5rem; }
-
-/* Archive Widget */
-.widget_archive ul {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-  .widget_archive ul li a {
-    text-transform: capitalize;
-    font-family: "merriweather", serif; }
-
-/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
@@ -1169,3 +1137,47 @@ h2 {
 
 h3 {
   font-size: 1.5rem; }
+
+/* Styling for the single post page  */
+.single-post .site-main {
+  margin-top: 4.6%; }
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */ }
+  .widget select {
+    max-width: 100%; }
+
+/* Search widget. */
+.widget_search .search-submit {
+  display: none; }
+
+/* Archive widget */
+/* Business hours widget */
+.day-of-week {
+  font-weight: bold; }
+
+/* Inhabitent Contact widget */
+.inhabitent-contact-widget-class .fa {
+  padding-right: 0.5rem; }
+
+.inhabitent-contact-widget-class a {
+  text-transform: none;
+  font-family: "merriweather", serif; }
+
+.inhabitent-contact-widget-class p {
+  display: -ms-flexbox;
+  display: flex; }
+
+/* Archive Widget */
+.widget_archive ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .widget_archive ul li a {
+    text-transform: capitalize;
+    font-family: "merriweather", serif; }
