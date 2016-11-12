@@ -80,7 +80,12 @@ function get_all_product_posts( $query ) {
 	$query->set('orderby', 'title');
 	$query->set('order', 'ASC');
   }
-//   elseif
+	elseif (is_tax() ) {
+	$query->set('posts_per_page', '4');
+	$query->set('orderby', 'title');
+	$query->set('order', 'ASC');
+	}
+
   /**
 *	Set product category posts  to 4 posts 
 */ 
