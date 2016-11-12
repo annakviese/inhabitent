@@ -675,8 +675,8 @@ input[type=submit] {
 
 .site-header {
   width: 100%;
-  height: 49px;
-  padding-left: 10%;
+  padding: 0 5% 0 10%;
+  height: 52px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -687,8 +687,10 @@ input[type=submit] {
       align-items: center;
   border-bottom: 1px solid lightgrey;
   position: fixed;
+  z-index: 999;
   background-color: rgba(255, 255, 255, 0.6); }
   .site-header a img {
+    margin-top: 3%;
     width: 27%; }
 
 .header-search fieldset {
@@ -696,9 +698,16 @@ input[type=submit] {
   .header-search fieldset button {
     visibility: hidden; }
   .header-search fieldset .fa {
-    font-size: 1.5rem; }
+    font-size: 1.2rem;
+    color: #248A83; }
   .header-search fieldset input[type="search"] {
-    border: none; }
+    border: none;
+    width: 0px;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 1rem; }
+    .header-search fieldset input[type="search"]:focus {
+      outline: none; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -717,14 +726,14 @@ a {
 
 /* Menus */
 .main-navigation {
-  margin-right: 2rem;
+  line-height: 1;
   display: -ms-flexbox;
   display: flex;
   width: auto;
   -ms-flex-align: baseline;
       align-items: baseline; }
   .main-navigation li {
-    margin-right: 2rem;
+    margin-right: 1rem;
     text-transform: uppercase; }
 
 ul {
