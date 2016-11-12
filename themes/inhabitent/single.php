@@ -27,8 +27,6 @@ get_header(); ?>
 				<a href = "#" class = "social-btn">
 					<i class="fa fa-pinterest" aria-hidden="true"> pin </i>
 				</a> 
-
-
 			</div> <!--social buttons -->
 
 			<?php

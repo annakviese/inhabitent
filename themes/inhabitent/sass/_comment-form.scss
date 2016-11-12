@@ -1,0 +1,38 @@
+.single-post {
+.comment-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .comment-form-comment {
+        width: 100%;
+        textarea {
+                background-color: $form-background;
+            }
+    }
+    .comment-form-author {
+        width: 49%; 
+        margin-right: 1%;
+            input[type=text] {
+                width: 100%;
+                background-color: $form-background;
+            }
+    }
+
+    .comment-form-email {
+        width: 49%;
+        margin-left: 1%;
+            input[type=email] {
+                width: 100%;
+                background-color: $form-background;
+            }
+    }
+    .comment-form-url {
+        width: 100%;
+            input[id=url]{
+                width: 100%;
+                background-color: $form-background;
+            }
+    }
+}
+}
