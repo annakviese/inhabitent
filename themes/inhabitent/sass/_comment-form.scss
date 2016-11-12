@@ -1,4 +1,64 @@
+/* Style for the Comment Form */
+
 .single-post {
+
+.comments-area {
+    margin-top: 10%;
+
+    .comment-list{
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        float: none;
+    }
+
+    #comment-2{
+        width: 100%;
+        .children {
+           margin: 10%;
+        }
+    }
+
+
+.comment-body {
+        display: flex;
+    
+    .comment-author-avatar  img{
+        border-radius: 50%;
+        height: 80px;
+        width: auto;
+        }
+
+    .comment-content {
+        margin-left: 5%;
+        p {
+            margin-bottom: 1em;
+            }
+        .comment-author cite {
+            font-weight: bold;
+            }
+        .comment-metadata{ 
+            display: flex;
+            color: $brand-medium-grey;
+            }
+        a {
+            text-transform: capitalize;
+            font-family: $main-font-family;
+        }
+    }
+}
+}
+
+
+
+/* Comment Form Section Styles */
+
+.comment-respond {
+    margin-top: 10%;
+}
+
 .comment-form {
     width: 100%;
     display: flex;

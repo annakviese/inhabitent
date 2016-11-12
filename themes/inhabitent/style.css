@@ -935,9 +935,9 @@ a {
     width: 1000px;
     height: auto; }
 
-.entry-content a {
+.entry-content {
   /*Read More Button */ }
-  .entry-content a a {
+  .entry-content a {
     background-color: transparent;
     border-radius: 0px;
     padding: 0.35rem 0.7rem;
@@ -946,7 +946,7 @@ a {
     width: 150px;
     font-size: 0.9rem;
     text-align: center; }
-    .entry-content a a:hover {
+    .entry-content a:hover {
       background-color: #248A83;
       color: white;
       border: none; }
@@ -1120,33 +1120,69 @@ h2 {
 h3 {
   font-size: 1.5rem; }
 
-.single-post .comment-form {
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .single-post .comment-form .comment-form-comment {
-    width: 100%; }
-    .single-post .comment-form .comment-form-comment textarea {
-      background-color: #f4f4f4; }
-  .single-post .comment-form .comment-form-author {
-    width: 49%;
-    margin-right: 1%; }
-    .single-post .comment-form .comment-form-author input[type=text] {
-      width: 100%;
-      background-color: #f4f4f4; }
-  .single-post .comment-form .comment-form-email {
-    width: 49%;
-    margin-left: 1%; }
-    .single-post .comment-form .comment-form-email input[type=email] {
-      width: 100%;
-      background-color: #f4f4f4; }
-  .single-post .comment-form .comment-form-url {
-    width: 100%; }
-    .single-post .comment-form .comment-form-url input[id=url] {
-      width: 100%;
-      background-color: #f4f4f4; }
+/* Style for the Comment Form */
+.single-post {
+  /* Comment Form Section Styles */ }
+  .single-post .comments-area {
+    margin-top: 10%; }
+    .single-post .comments-area .comment-list {
+      margin: 0;
+      padding: 0; }
+    .single-post .comments-area li {
+      float: none; }
+    .single-post .comments-area #comment-2 {
+      width: 100%; }
+      .single-post .comments-area #comment-2 .children {
+        margin: 10%; }
+    .single-post .comments-area .comment-body {
+      display: -ms-flexbox;
+      display: flex; }
+      .single-post .comments-area .comment-body .comment-author-avatar img {
+        border-radius: 50%;
+        height: 80px;
+        width: auto; }
+      .single-post .comments-area .comment-body .comment-content {
+        margin-left: 5%; }
+        .single-post .comments-area .comment-body .comment-content p {
+          margin-bottom: 1em; }
+        .single-post .comments-area .comment-body .comment-content .comment-author cite {
+          font-weight: bold; }
+        .single-post .comments-area .comment-body .comment-content .comment-metadata {
+          display: -ms-flexbox;
+          display: flex;
+          color: #808080; }
+        .single-post .comments-area .comment-body .comment-content a {
+          text-transform: capitalize;
+          font-family: "merriweather", serif; }
+  .single-post .comment-respond {
+    margin-top: 10%; }
+  .single-post .comment-form {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .single-post .comment-form .comment-form-comment {
+      width: 100%; }
+      .single-post .comment-form .comment-form-comment textarea {
+        background-color: #f4f4f4; }
+    .single-post .comment-form .comment-form-author {
+      width: 49%;
+      margin-right: 1%; }
+      .single-post .comment-form .comment-form-author input[type=text] {
+        width: 100%;
+        background-color: #f4f4f4; }
+    .single-post .comment-form .comment-form-email {
+      width: 49%;
+      margin-left: 1%; }
+      .single-post .comment-form .comment-form-email input[type=email] {
+        width: 100%;
+        background-color: #f4f4f4; }
+    .single-post .comment-form .comment-form-url {
+      width: 100%; }
+      .single-post .comment-form .comment-form-url input[id=url] {
+        width: 100%;
+        background-color: #f4f4f4; }
 
 /* Styling for the single post page  */
 .single-post .site-main {
