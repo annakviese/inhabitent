@@ -1,0 +1,14 @@
+.search-results {
+    .content-area .site-main {
+    margin-top: 4.6%;
+    }
+
+    .entry-summary {
+        
+	 @include brand-button;
+    }
+
+    .entry-meta {
+    visibility: hidden;
+    }
+}

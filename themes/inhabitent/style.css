@@ -709,6 +709,26 @@ input[type=submit] {
     .header-search fieldset input[type="search"]:focus {
       outline: none; }
 
+.search-results .content-area .site-main {
+  margin-top: 4.6%; }
+
+.search-results .entry-summary a {
+  background-color: transparent;
+  border-radius: 0px;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid #808080;
+  color: #248A83;
+  width: 150px;
+  font-size: 0.9rem;
+  text-align: center; }
+  .search-results .entry-summary a:hover {
+    background-color: #248A83;
+    color: white;
+    border: none; }
+
+.search-results .entry-meta {
+  visibility: hidden; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
