@@ -935,9 +935,9 @@ a {
     width: 1000px;
     height: auto; }
 
-.entry-content {
+.entry-content a {
   /*Read More Button */ }
-  .entry-content a {
+  .entry-content a a {
     background-color: transparent;
     border-radius: 0px;
     padding: 0.35rem 0.7rem;
@@ -946,7 +946,7 @@ a {
     width: 150px;
     font-size: 0.9rem;
     text-align: center; }
-    .entry-content a:hover {
+    .entry-content a a:hover {
       background-color: #248A83;
       color: white;
       border: none; }
@@ -967,24 +967,6 @@ a {
     padding-right: 5px; }
   .entry-meta .byline {
     padding-left: 5px; }
-
-.entry-footer {
-  display: -ms-flexbox;
-  display: flex; }
-  .entry-footer .cat-links {
-    -ms-flex: 40% 0 0;
-        flex: 40% 0 0; }
-    .entry-footer .cat-links a {
-      display: inline-block; }
-  .entry-footer .tags-links {
-    -ms-flex: 40% 0 0;
-        flex: 40% 0 0; }
-    .entry-footer .tags-links a {
-      display: inline-block; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -1141,6 +1123,60 @@ h3 {
 /* Styling for the single post page  */
 .single-post .site-main {
   margin-top: 4.6%; }
+
+.social-btn {
+  background-color: transparent;
+  border-radius: 0px;
+  padding: 0.35rem 1rem;
+  border: 1px solid #404040;
+  width: auto;
+  font-size: 1rem;
+  text-align: center; }
+  .social-btn .fa {
+    color: #404040; }
+  .social-btn:hover {
+    background-color: #248A83;
+    border: none; }
+    .social-btn:hover .fa {
+      color: white; }
+
+/* Styling for the single post page  */
+.single-post .site-main {
+  margin-top: 4.6%; }
+
+/* Customize the footer of a single Post */
+.entry-footer {
+  text-transform: uppercase; }
+  .entry-footer .cat-links {
+    margin-right: 1.5rem; }
+    .entry-footer .cat-links a {
+      display: inline-block; }
+  .entry-footer .tags-links a {
+    display: inline-block; }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em; }
+
+.social-buttons {
+  display: -ms-flexbox;
+  display: flex; }
+  .social-buttons .social-btn {
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 0.35rem 1rem;
+    border: 1px solid #404040;
+    width: auto;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 1.5rem; }
+    .social-buttons .social-btn .fa {
+      color: #404040; }
+    .social-buttons .social-btn:hover {
+      background-color: #248A83;
+      border: none; }
+      .social-buttons .social-btn:hover .fa {
+        color: white; }
 
 /*--------------------------------------------------------------
 # Widgets

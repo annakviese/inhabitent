@@ -52,3 +52,24 @@
 			box-shadow: none;
 		}
 }
+
+@mixin social-button {
+		background-color: transparent;
+		border-radius: 0px;
+		padding: 0.35rem 1rem;
+		border: 1px solid $base-font-color;
+		width: auto;
+		font-size: 1rem;
+		text-align: center;
+			.fa {
+				color: $base-font-color;
+			}
+
+		&:hover {
+			background-color: $brand-green;
+			border: none;
+			.fa {
+				color: white;
+			}
+		}
+}

@@ -1,0 +1,40 @@
+/* Styling for the single post page  */
+
+.single-post {
+    .site-main {
+    margin-top: 4.6%;
+    }
+}
+
+/* Customize the footer of a single Post */
+.entry-footer {
+	    text-transform: uppercase;
+	
+	.cat-links {
+		margin-right: 1.5rem;
+
+		a {
+			display: inline-block;
+		}
+	}
+	.tags-links {
+		a {
+			display: inline-block;
+		}
+	}
+	
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+
+.social-buttons {
+        display: flex;
+        
+        .social-btn {
+            @include social-button;
+            margin-right: 1.5rem; 
+        }
+}

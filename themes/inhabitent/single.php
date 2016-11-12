@@ -18,15 +18,15 @@ get_header(); ?>
 			<!--<?php the_post_navigation(); ?>-->
 			
 			<div class = "social-buttons">
-				<button type = "button" class = "social-btn">
+				<a href = "#" class = "social-btn">
 					<i class="fa fa-facebook" aria-hidden="true"> like </i>
-				</button> 
-				<button type = "button" class = "social-btn">
+				</a> 
+				<a href = "#" class = "social-btn">
 					<i class="fa fa-twitter" aria-hidden="true"> tweet </i>
-				</button> 
-				<button type = "button" class = "social-btn">
+				</a> 
+				<a href = "#" class = "social-btn">
 					<i class="fa fa-pinterest" aria-hidden="true"> pin </i>
-				</button> 
+				</a> 
 
 
 			</div> <!--social buttons -->
@@ -41,7 +41,7 @@ get_header(); ?>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
+		<?php get_sidebar(); ?>
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

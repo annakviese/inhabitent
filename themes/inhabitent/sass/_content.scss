@@ -86,9 +86,10 @@
 }
 
 .entry-content {
-
+	a {
 	/*Read More Button */
 	 @include brand-button;
+	}
 }
 
 .entry-meta {
@@ -113,30 +114,6 @@
 } 
 
 
-.entry-footer {
-	display: flex;
-	
-	.cat-links {
-		flex: 40% 0 0;
-
-		a {
-			display: inline-block;
-		}
-	}
-	.tags-links {
-		flex: 40% 0 0;
-		a {
-			display: inline-block;
-		}
-	}
-}
-
-
-
-.page-links {
-	clear: both;
-	margin: 0 0 $base__space-unit;
-}
 
 /* Asides */
 
