@@ -62,3 +62,25 @@ textarea {
 }
 
 
+label {
+	text-transform: uppercase;
+	font-family: $accent-font-family;
+	
+	span {
+		color: $brand-orange;
+	}
+	input {
+		background-color: $form-background;
+		height: 40px;
+		width: 50%;
+	}
+	textarea {
+		background-color: $form-background;
+	}
+}
+
+input[type=submit] {
+		@include form-submit-button;
+}
+
+
