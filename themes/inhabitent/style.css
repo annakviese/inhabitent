@@ -1246,17 +1246,20 @@ h3 {
       width: 49%;
       margin-right: 1%; }
       .single-post .comment-form .comment-form-author input[type=text] {
+        height: 40px;
         width: 100%;
         background-color: #f4f4f4; }
     .single-post .comment-form .comment-form-email {
       width: 49%;
       margin-left: 1%; }
       .single-post .comment-form .comment-form-email input[type=email] {
+        height: 40px;
         width: 100%;
         background-color: #f4f4f4; }
     .single-post .comment-form .comment-form-url {
       width: 100%; }
       .single-post .comment-form .comment-form-url input[id=url] {
+        height: 40px;
         width: 100%;
         background-color: #f4f4f4; }
 
