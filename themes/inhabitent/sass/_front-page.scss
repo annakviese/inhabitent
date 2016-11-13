@@ -13,6 +13,8 @@
     }
     h1 {
         text-align: center;
+        font-size: 2.5rem;
+        font-weight: normal;
     }
 }
 
@@ -30,9 +32,9 @@
 * SHOP STUFF SECTION 
 =============================================================*/
 .shopping {
-    height: 80vh;
+    height: 60vh;
     width: 100%;
-    margin: 0 auto;
+    margin: 5% auto 0 auto;
 
     .shop-stuff {
     
@@ -43,21 +45,27 @@
         .shop-offers {
         width: 20%;
         flex: 23% 0 0;
-        padding: 2rem;
-        border: 2px solid #a1a1a1;
+        padding: 1em 0.5em;
+        border-color: #e1e1e1;
+        border-style: solid;
+        border-width: 5px 2px 2px 2px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+            &:hover {
+                border-color: $brand-orange;
+            }
 
             img {
-                width: 25%;
+                width: 30%;
             }
             
             .button {
-                color: white;
-                margin: auto auto;
-                padding: 0.8rem;
-                background-color: #248A83;
-                text-transform: uppercase;
-
+               @include form-submit-button
+               width: 150px;
+               
             }
         }
     }
@@ -70,6 +78,8 @@
     height: 80vh;
     width: 100%;
     margin: 0 auto;
+
+
     
     .journal-posts {
         // margin: 4% 2%;

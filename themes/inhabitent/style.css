@@ -456,7 +456,8 @@ input[type=submit] {
   text-transform: uppercase;
   text-align: center;
   box-shadow: none;
-  text-shadow: none; }
+  text-shadow: none;
+  cursor: pointer; }
   input[type=submit]:hover {
     background-color: #154D49;
     color: white;
@@ -476,7 +477,9 @@ input[type=submit] {
   border: none; }
 
 .page-id-4 h1 {
-  text-align: center; }
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: normal; }
 
 .banner-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/home-hero.jpg");
@@ -493,9 +496,9 @@ input[type=submit] {
 * SHOP STUFF SECTION 
 =============================================================*/
 .shopping {
-  height: 80vh;
+  height: 60vh;
   width: 100%;
-  margin: 0 auto; }
+  margin: 5% auto 0 auto; }
   .shopping .shop-stuff {
     display: -ms-flexbox;
     display: flex;
@@ -507,17 +510,39 @@ input[type=submit] {
       width: 20%;
       -ms-flex: 23% 0 0;
           flex: 23% 0 0;
-      padding: 2rem;
-      border: 2px solid #a1a1a1;
-      text-align: center; }
+      padding: 1em 0.5em;
+      border-color: #e1e1e1;
+      border-style: solid;
+      border-width: 5px 2px 2px 2px;
+      text-align: center;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center; }
+      .shopping .shop-stuff .shop-offers:hover {
+        border-color: #d99054; }
       .shopping .shop-stuff .shop-offers img {
-        width: 25%; }
+        width: 30%; }
       .shopping .shop-stuff .shop-offers .button {
-        color: white;
-        margin: auto auto;
-        padding: 0.8rem;
         background-color: #248A83;
-        text-transform: uppercase; }
+        border-radius: 0px;
+        padding: 0.5rem 0.7rem;
+        color: white;
+        width: 100px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        text-align: center;
+        box-shadow: none;
+        text-shadow: none;
+        cursor: pointer;
+        width: 150px; }
+        .shopping .shop-stuff .shop-offers .button:hover {
+          background-color: #154D49;
+          color: white;
+          border: none;
+          box-shadow: none; }
 
 /*=============================================================
 * JOURNAL SECTION
