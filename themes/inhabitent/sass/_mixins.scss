@@ -12,14 +12,13 @@
 }
 
 // Button with green background on hover 
-
 @mixin brand-button {
 	a {
 		background-color: transparent;
 		border-radius: 0px;
 		padding: 0.35rem 0.7rem;
-		border: 1px solid $brand-medium-grey;
-		color: $brand-green;
+		border: 1px solid $base-font-color;
+		color: $base-font-color;
 		width: 150px;
 		font-size: 0.9rem;
 		text-align: center;

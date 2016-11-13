@@ -1,4 +1,5 @@
 .page-id-4 {
+
     .site-content {
         width: 100vw;
     }
@@ -16,10 +17,11 @@
         font-size: 2.5rem;
         font-weight: normal;
     }
+    
 }
 
 .banner-image {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/home-hero.jpg');
+    background-image: $linear-gradient, url('../../images/home-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -64,8 +66,7 @@
             
             .button {
                @include form-submit-button
-               width: 150px;
-               
+               width: 150px;  
             }
         }
     }
@@ -79,32 +80,45 @@
     width: 100%;
     margin: 0 auto;
 
-
-    
     .journal-posts {
         // margin: 4% 2%;
         display: flex;
         /*flex-wrap: wrap;*/
         justify-content: space-between;
+        
 
         .recent-posts {
-        width: 30%;
-        flex: 31% 0 0;
-        
-            img {
-                width: auto;
-                /*height: 200px;*/
+            display: flex;
+            flex-direction: column;
+            height: 430px;
+            flex: 32% 0 0;
+            position: relative; 
+            border: $solid-border;
+            
+            .homedate {
+                font-size: 0.8rem;
+                padding: 0 2%;
+                line-height: 1;
             }
-             .button {
-                /*padding: 1rem;*/
-                color: white;
-                padding: 0.8rem;
-                width: 9rem;
-                background-color: transparent;
-                text-transform: uppercase;
-                color: black;
-                border: 1px solid #a1a1a1;
 
+           h2 {
+                font-size: 1.5rem;
+                font-family: $accent-font-family;
+                font-weight: bold;
+                padding: 0 2%;
+                line-height: 1;
+            }
+            
+            img {
+                max-height: 240px;
+                max-width: 100%;
+            }
+
+            .button {
+                @include brand-button;
+                position: absolute;
+                bottom: 0;
+                margin: 0 0 2% 2%;
             }
         }
 
@@ -117,10 +131,17 @@
 =============================================================*/
 
 .adventures-section {
-    height: auto;
-    width: 85vw;
-    margin: 4% auto;
-   
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 5%;
+      
+       .more-button {   
+                margin-top: 2%;        
+                @include form-submit-button;
+                width: auto;
+                font-size: 1.2rem;
+                }
+
 }
 
 .adventures {
@@ -129,27 +150,41 @@
     width: 100%;
     height: 500px;
 
-    .button {
-                /*padding: 1rem;*/
-                color: white;
-                padding: 0.8rem;
-                width: auto;
-                background-color: #248A83;
-                text-transform: uppercase;
-                color: black;
-                border: 1px solid #a1a1a1;
+    h1 a, h2 a, h3 a{
+        margin: 20px;
+        color: white;
+        font-family: $main-font-family;
+        font-weight: normal;
+        text-align: left;
+    }
 
-            }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    .button {
+        margin-left: 20px;
+        @include brand-button;
+        a {
+            border: 1px solid white;
+            color: white;
+        }
+    }
 }
 
+ 
+
+
 .left-box {
-    background-image: url('../../images/adventures/canoe-girl.jpg');
+    background-image: $linear-gradient, url('../../images/adventures/canoe-girl.jpg');
     background-size: cover;
     flex: 50% 0 0 ;
     border-right: $adventure-border;
-        a {
-            font-size: 3rem;
-        }
 }
 
 .right-side {
@@ -159,18 +194,13 @@
     height: 100%;
 }
 
-.upper-right-box{
-    background-image: url('../../images/adventures/beach-bonfire.jpg');
+.upper-right-box {
+    background-image: $linear-gradient,url('../../images/adventures/beach-bonfire.jpg');
     width: 100%;
     height: 50%;
     background-position: center;
     background-size: cover;
     border-bottom: $adventure-border;
-    /*flex: 50% 0 0; */
-     a {
-            font-size: 2.5rem;
-        }
-
 }
 
 .bottom-right-section {
@@ -180,24 +210,17 @@
     height: 50%;
 
     .left {
-    background-image: url('../../images/adventures/mountain-hikers.jpg');
+    background-image: $linear-gradient,url('../../images/adventures/mountain-hikers.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     flex: 50% 0 0; 
     border-right: $adventure-border;
-         a {
-            font-size: 2rem;
-        }
     }
     .right {
-    background-image: url('../../images/adventures/night-sky.jpg');
+    background-image: $linear-gradient,url('../../images/adventures/night-sky.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     flex: 50% 0 0; 
-     a {
-            font-size: 2rem;
-        }
-}
-
+    }
 
 }
