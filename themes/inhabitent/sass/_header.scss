@@ -1,3 +1,17 @@
+//journal, shop and find us - green logo 
+
+.site-branding {
+	@include green-header-logo;
+}
+
+.page-id-128 , .page-id-4 {
+	@include white-header;
+//white logo in the header for front page and about us page 
+.site-branding{
+	@include white-header-logo;
+}
+}
+
 .site-header{
 	width: 100%;
 	padding: 0 5% 0 10%;

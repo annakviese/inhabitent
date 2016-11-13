@@ -73,3 +73,55 @@
 			}
 		}
 }
+
+
+@mixin green-header-logo {
+	height: 50px;
+    width: 50px;
+	a {
+    height: 100px;
+    width: auto;
+	background-image: url('../../images/logos/inhabitent-logo-tent.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	}
+}
+
+@mixin white-header-logo {
+	height: 50px;
+    width: 50px;
+	a {
+    height: 100px;
+    width: auto;
+	background-image: url('../../images/logos/inhabitent-logo-tent-white.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	}
+}
+
+@mixin white-header {
+	.site-header {
+        
+        background-color: transparent;
+        border: none;
+
+        a {
+            color: white;
+        }
+    	}
+    .header-search fieldset {
+        input {
+            background-color: transparent;
+            color: white ;
+
+            &::placeholder {
+            color: $brand-yellow;
+            }
+        }
+        
+        .fa {
+            color: white;
+        }
+    }
+}
+

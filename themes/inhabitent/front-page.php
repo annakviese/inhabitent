@@ -10,15 +10,15 @@ get_header(); ?>
                      <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>" class="banner-img" alt="inhabitent circle logo" />
             </section>
 
-            <div id="primary" class="content-area">
-		  <main id="main" class="shop-main" role="shop"> 
+        <div id="primary" class="content-area">
+		<!-- <main id="main" class="site-main" role="main"> -->
 
 <!--Section to shop for offers -->
             
             <section class = "shopping">
                 <h1> Shop stuff </h1>
-
             <div class = "shop-stuff">
+
         <?php    
            $terms = get_terms('product_type');  
 
@@ -61,22 +61,6 @@ get_header(); ?>
                 $args = array( 'numberposts' => '3', 'order' => 'DESC','post_status' => 'publish' );
                 $product_posts = get_posts ( $args);
                 ?>
-                <!--  <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); 
-                //  {
-                //     echo '<div class = "product-posts">';
-                //     echo '<img src="'.$post["post_thumbnail_id"] .'"/>';
-                //     echo get_the_post_thumbnail($post["ID"]);
-                //     echo '<a>' . $post["post_title"]. '</a>';
-                //     echo '<p class="homedate">'. $post["post_date"]. '</p>';
-                //     echo '<p class="homecomments">'. $post["comment_count"]. " comments". '</p>';
-                //     echo '<a href =' . get_permalink( $recent['ID'] ) .' class="button"> read entry </a>';
-                //     echo '</div>';
-                //     }
-                // ?>
-                // <?php endforeach; wp_reset_postdata(); ?>
-                    
-
-                </div> <!-- journal posts -->
             </section> <!-- end of journal section -->
 
 <!--adventure section -->
@@ -109,7 +93,7 @@ get_header(); ?>
             </section>
 			        
 	</div><!-- #secondary -->
-
+    </div> <!--content area -->
     </body> 
 
 

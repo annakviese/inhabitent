@@ -463,6 +463,21 @@ input[type=submit] {
     border: none;
     box-shadow: none; }
 
+.page-id-4 .site-content {
+  width: 100vw; }
+
+.page-id-4 .content-area {
+  display: block;
+  width: 1120px;
+  margin: 0 auto; }
+
+.page-id-4 .site-main {
+  padding: 0;
+  border: none; }
+
+.page-id-4 h1 {
+  text-align: center; }
+
 .banner-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/home-hero.jpg");
   background-repeat: no-repeat;
@@ -482,7 +497,6 @@ input[type=submit] {
   width: 100%;
   margin: 0 auto; }
   .shopping .shop-stuff {
-    margin: 4% 2%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -510,10 +524,9 @@ input[type=submit] {
 =============================================================*/
 .journal {
   height: 80vh;
-  width: 84vw;
+  width: 100%;
   margin: 0 auto; }
   .journal .journal-posts {
-    margin: 4% 2%;
     display: -ms-flexbox;
     display: flex;
     /*flex-wrap: wrap;*/
@@ -565,7 +578,8 @@ input[type=submit] {
   background-image: url("../../images/adventures/canoe-girl.jpg");
   background-size: cover;
   -ms-flex: 50% 0 0;
-      flex: 50% 0 0; }
+      flex: 50% 0 0;
+  border-right: 18px solid white; }
   .left-box a {
     font-size: 3rem; }
 
@@ -583,6 +597,7 @@ input[type=submit] {
   height: 50%;
   background-position: center;
   background-size: cover;
+  border-bottom: 18px solid white;
   /*flex: 50% 0 0; */ }
   .upper-right-box a {
     font-size: 2.5rem; }
@@ -598,7 +613,8 @@ input[type=submit] {
     background-repeat: no-repeat;
     background-size: cover;
     -ms-flex: 50% 0 0;
-        flex: 50% 0 0; }
+        flex: 50% 0 0;
+    border-right: 18px solid white; }
     .bottom-right-section .left a {
       font-size: 2rem; }
   .bottom-right-section .right {
@@ -662,16 +678,76 @@ input[type=submit] {
   -ms-flex: 40% 0 0;
       flex: 40% 0 0; }
 
+.page-id-128 .site-content {
+  width: 100vw; }
+
+.page-id-128 .content-area {
+  display: block;
+  width: 1120px;
+  margin: 0 auto; }
+
+.page-id-128 h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  font-size: 3rem; }
+
+.about-text {
+  max-width: 800px;
+  margin: 5% auto; }
+
 .about-hero {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+
+.site-branding {
+  height: 50px;
+  width: 50px; }
+  .site-branding a {
+    height: 100px;
+    width: auto;
+    background-image: url("../../images/logos/inhabitent-logo-tent.svg");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+.page-id-128 .site-header, .page-id-4 .site-header {
+  background-color: transparent;
+  border: none; }
+  .page-id-128 .site-header a, .page-id-4 .site-header a {
+    color: white; }
+
+.page-id-128 .header-search fieldset input, .page-id-4 .header-search fieldset input {
+  background-color: transparent;
+  color: white; }
+  .page-id-128 .header-search fieldset input::-webkit-input-placeholder, .page-id-4 .header-search fieldset input::-webkit-input-placeholder {
+    color: #f0e4d1; }
+  .page-id-128 .header-search fieldset input::-moz-placeholder, .page-id-4 .header-search fieldset input::-moz-placeholder {
+    color: #f0e4d1; }
+  .page-id-128 .header-search fieldset input:-ms-input-placeholder, .page-id-4 .header-search fieldset input:-ms-input-placeholder {
+    color: #f0e4d1; }
+  .page-id-128 .header-search fieldset input::placeholder, .page-id-4 .header-search fieldset input::placeholder {
+    color: #f0e4d1; }
+
+.page-id-128 .header-search fieldset .fa, .page-id-4 .header-search fieldset .fa {
+  color: white; }
+
+.page-id-128 .site-branding, .page-id-4 .site-branding {
+  height: 50px;
+  width: 50px; }
+  .page-id-128 .site-branding a, .page-id-4 .site-branding a {
+    height: 100px;
+    width: auto;
+    background-image: url("../../images/logos/inhabitent-logo-tent-white.svg");
+    background-size: contain;
+    background-repeat: no-repeat; }
 
 .site-header {
   width: 100%;
