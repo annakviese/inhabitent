@@ -12,9 +12,9 @@ get_header(); ?>
             </section>
             
         <div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<!-- <main id="main" class="site-main" role="main"> -->
 
-            <div = "about-text">
+            <div class= "about-text">
             <?php
             $props = CFS()->get_field_info('our_story');
             
