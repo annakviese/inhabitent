@@ -982,6 +982,35 @@ input[type=submit] {
     .search-pagination a:visited {
       color: white; }
 
+/* search form style when no results are found */
+.search-form fieldset .icon-search {
+  font-size: 1.5rem; }
+
+.search-form fieldset .search-field {
+  margin-left: 10px;
+  width: 450px; }
+
+.search-form fieldset .search-submit {
+  background-color: #248A83;
+  border-radius: 0px;
+  padding: 0.5rem 0.7rem;
+  color: white;
+  width: 100px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: none;
+  text-shadow: none;
+  cursor: pointer;
+  height: 48px;
+  border-radius: 4px;
+  margin-left: 10px; }
+  .search-form fieldset .search-submit:hover {
+    background-color: #154D49;
+    color: white;
+    border: none;
+    box-shadow: none; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/

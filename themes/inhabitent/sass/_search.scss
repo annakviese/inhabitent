@@ -49,3 +49,21 @@
     }
 
 }
+
+/* search form style when no results are found */
+
+.search-form fieldset {
+        .icon-search {
+            font-size: 1.5rem;
+        }
+        .search-field {
+            margin-left: 10px;
+            width: 450px;
+        }
+        .search-submit {
+            @include form-submit-button;
+            height: 48px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+}   
