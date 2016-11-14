@@ -8,6 +8,7 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
+Text Domain: redAcademy
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -690,7 +691,6 @@ input[type=submit] {
 .bottom-right-section {
   display: -ms-flexbox;
   display: flex;
-  display: wrap;
   width: 100%;
   height: 50%; }
   .bottom-right-section .left {
