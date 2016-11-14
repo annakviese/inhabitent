@@ -26,11 +26,7 @@
 		text-align: center;
 		box-shadow: none;
 		text-shadow: none;
-		cursor: pointer;
-         &:hover {
-
-         }
-
+		cursor: pointer
     }
     a {
         background-color: $brand-green;
@@ -53,17 +49,34 @@
 /* search form style when no results are found */
 
 .search-form fieldset {
+        border: none;
         .icon-search {
-            font-size: 1.5rem;
+            display: none;
         }
         .search-field {
-            margin-left: 10px;
-            width: 450px;
+            width: 300px;
         }
         .search-submit {
-            @include form-submit-button;
-            height: 48px;
-            border-radius: 4px;
-            margin-left: 10px;
+            display: none;
         }
 }   
+
+
+/* 404 style */
+
+.error404 {
+    .site-main {
+        margin-top: 50px;
+    }
+    .page-content{
+        li {
+            float: none;
+           a { 
+            display: inline;
+           }
+        }
+    }
+    .widget ul {
+        list-style: none;
+    }
+}
