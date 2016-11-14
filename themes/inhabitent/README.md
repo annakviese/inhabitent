@@ -1,45 +1,30 @@
-# RED Starter
+## Inhabitent Theme
+![Alt text](https://github.com/annakviese/inhabitent/blob/master/themes/inhabitent/documentation/inhabitent.png)
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+#### About 
+This is my first custom Wordpress Theme. This is a theme for a outdoor recreation company "Inhabitent Inc". 
+The theme required multiple pages with different content styles. 
+As it was the first custom theme I've built, this task presented multiple challenges: from figuring out the styling options
+for different pages and content types to building out custom widgets, custom archive and taxonomy pages. 
 
-Download me, add me to your `wp-content` directory, rename me, and and start themin'!
+The theme required a lot of styling and positioning and it was great opportunity to practice CSS and SCSS.
+The theme also included some animation for the search bar, different colors for navigation bar and gradient for most of the images.  
 
-## Using with VVV
+The more I was working on this project, the more I've felt that there are so many opportunities to improve and make the code much cleaner and simpler. 
 
-To get Browsersync working from within you VVV virtual machine (as configured this theme's `gulpfile.js`), you're going to need a bit of initial configuration.
+#### Technology Used
 
-### 1. Add port forwarding to your Vagrantfile
+* HTML / HTML5
+* CSS / CSS3
+* PHP
+* SASS 
+* JQuery 
 
-Just like with ScotchBox, we're going to need to set up port forwarding in our `Vagrantfile` so that `localhost:3000` on your VM can talk to `localhost:3000` on your host machine.
+#### Improvements 
 
-Add the following line under the "Port Forwarding" section in your VVV `Vagrantfile`
+* Correct all the errors and warnings displayed by Theme Checker
+* Adjust some of the styles to be readable by Mozilla & IE
+* Great addition would be to make the theme responsive
+* Create more variable and mixins in scss and rename the existing ones
+* Add a working shopping cart 
 
-```ruby
-config.vm.network "forwarded_port", guest: 3000, host: 3000
-```
-
-Be sure to `vagrant reload` after this!
-
-### 2. Install Gulp inside VVV
-
-Unlike ScotchBox, VVV doesn't come with Gulp pre-installed.
-
-To install Gulp, `vagrant up` then `vagrant ssh` and run the following command:
-
-```bash
-sudo npm install --global gulp-cli
-```
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` inside your theme directory next to install the node modules you'll need for Gulp, etc.
-
-You may have better luck with the package installation if you run `npm install` from your **host** machine (not from within the VM). This means that you will need to have Node installed on your actual computer to do this.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy.
-
-Now you should be able to `vagrant ssh` into your cd into `/vagrant/www/YOUR_SITE_DIR/htdocs/wp-content/themes/YOUR_THEME_DIR` and run `gulp` to get Browsersync up and running.
-
-Note that you will have to manually navigate to `localhost:3000` to see your site (it won't automatically launch in your browser).
