@@ -7,6 +7,7 @@
 
 get_header(); ?>
 		<p>	archive-product.php</p>
+	<div id="primary" class="content-area">
 		<div class = "shop-wrapper">
 			<header class="page-header">
 				<?php
@@ -16,8 +17,10 @@ get_header(); ?>
 			<!-- getting the product type names-->
 				<?php $terms = get_terms('product_type'); ?>
 				<?php foreach ($terms as $term) : ?>
-				<div class = 'shop-stuff'> <?php $url = get_term_link ($term->slug , 'product_type'); ?>
-				<a href='<?php echo $url ?>'> <?php  echo $term->name ?></a> </div>
+				<div class = 'shop-stuff'> 
+					<?php $url = get_term_link ($term->slug , 'product_type'); ?>
+					<p><a href="<?php echo $url ?>"><?php echo $term->name ?></a></p> 
+				</div>
 				<?php endforeach; ?>
 
 				</header><!-- .page-header -->
@@ -44,6 +47,7 @@ get_header(); ?>
 			<?php endif; ?>
 		
 			</div><!-- #primary -->
+		</div>
 		</div>
 	
 

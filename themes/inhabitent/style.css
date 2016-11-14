@@ -707,6 +707,11 @@ input[type=submit] {
     -ms-flex: 50% 0 0;
         flex: 50% 0 0; }
 
+.post-type-archive-product .content-area {
+  display: block;
+  width: 1120px;
+  margin: 0 auto; }
+
 .post-type-archive-product .page-header {
   border-bottom: 2px dotted lightgray;
   margin-bottom: 5rem; }
@@ -721,7 +726,6 @@ input[type=submit] {
 
 .shop-wrapper {
   margin-top: 5rem;
-  padding: 10% 5%;
   text-align: center; }
 
 .archive-area {

@@ -16,12 +16,12 @@
         </div><!-- .archive-meta -->
         <?php endif; ?>
  
-   		<?php if ( has_post_thumbnail() ) : ?>
-          <?php  echo '<a rel="bookmark" href="'. esc_url( get_permalink() ) .'"/a>';  ?>
-            <?php   the_post_thumbnail( 'large' ); ?>
-           
-            <?php the_title('<p class="archive-title"></h2>'); ?> 
-               ..........<?php echo CFS()->get( 'product_price' ); ?> </p>
+        <?php if ( has_post_thumbnail() ) : ?>
+            <a href="<?php the_permalink() ; ?> "> <?php the_post_thumbnail( 'large' ); ?> </a>
         <?php endif; ?>
+           
+         <p> 
+            <?php the_title('<p class="archive-title">'); ?> 
+               ..........<?php echo CFS()->get( 'product_price' ); ?> </p>
 </article><!-- #post-## -->
 </div>
