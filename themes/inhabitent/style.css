@@ -743,9 +743,16 @@ input[type=submit] {
   .archive-area .product-post {
     -ms-flex: 25% 0 0;
         flex: 25% 0 0;
-    border: 1px solid lightgrey; }
+    border: 10px solid white; }
     .archive-area .product-post img {
       height: 240px; }
+    .archive-area .product-post .product-thumbnail {
+      border-color: #e1e1e1;
+      border-width: 1px 1px 5px 1px;
+      border-style: solid;
+      height: 245px; }
+    .archive-area .product-post .product-info {
+      border: 1px solid #e1e1e1; }
 
 .single-product .type-product {
   display: -ms-flexbox;

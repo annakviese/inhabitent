@@ -17,6 +17,7 @@
             }
 
         }
+
         .shop-stuff {
         display: inline-block;
         font-size: 2rem;
@@ -42,13 +43,26 @@
 
         .product-post {
         flex: 25% 0 0;
-        border: 1px solid lightgrey;
+        border: 10px solid white;
 
         img {
             height: 240px; 
         }
+        .product-thumbnail {
+            border-color: #e1e1e1;
+            border-width: 1px 1px 5px 1px;
+            border-style: solid;
+            height: 245px;
+        }
+
+        .product-info {
+            border: $solid-border;
+        }
         }
 }
+
+
+
 
 .single-product {
     .type-product {

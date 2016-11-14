@@ -17,11 +17,13 @@
         <?php endif; ?>
  
         <?php if ( has_post_thumbnail() ) : ?>
-            <a href="<?php the_permalink() ; ?> "> <?php the_post_thumbnail( 'large' ); ?> </a>
+            <div class = "product-thumbnail"><a href="<?php the_permalink() ; ?> "> <?php the_post_thumbnail( 'large' ); ?> </a></div>
         <?php endif; ?>
-           
+
+         <div class = "product-info">  
          <p> 
             <?php the_title('<p class="archive-title">'); ?> 
                ..........<?php echo CFS()->get( 'product_price' ); ?> </p>
+        </div>
 </article><!-- #post-## -->
 </div>
