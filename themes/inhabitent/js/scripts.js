@@ -11,5 +11,6 @@
   $('input[type="search"]').on('focusout', function(){
     $(this).animate({width: 0});
   });
+  
 })( jQuery );
 

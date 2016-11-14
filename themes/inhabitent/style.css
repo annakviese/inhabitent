@@ -951,6 +951,37 @@ input[type=submit] {
 .search-results .entry-meta {
   visibility: hidden; }
 
+.search-pagination {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 20%; }
+  .search-pagination span {
+    background-color: #a1a1a1;
+    border-radius: 0px;
+    padding: 0.5rem 0.7rem;
+    color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer; }
+  .search-pagination a {
+    background-color: #248A83;
+    border-radius: 0px;
+    padding: 0.5rem 0.7rem;
+    color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer; }
+    .search-pagination a:visited {
+      color: white; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
