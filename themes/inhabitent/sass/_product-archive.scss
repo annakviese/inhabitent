@@ -1,4 +1,4 @@
-.post-type-archive-product { 
+.post-type-archive-product{
 
      .content-area {
         display: block;
@@ -106,4 +106,31 @@
            line-height: 1;
        }
     }
+}
+
+
+/*=============================================================
+* Taxonomy product Type 
+=============================================================*/
+
+.tax-product_type{ 
+    
+    .site-content {
+        height: 100vh;
+    }
+
+    .content-area {
+       display: initial;
+     }
+
+    .page-header {
+        padding-top: 10px;
+        text-align: center;
+        border-bottom: $dashed-border; 
+        margin-bottom: 50px; 
+    }
+    .product-info {
+        text-align: center;
+    }
+
 }

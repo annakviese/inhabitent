@@ -806,6 +806,24 @@ input[type=submit] {
     font-size: 1.5rem;
     line-height: 1; }
 
+/*=============================================================
+* Taxonomy product Type 
+=============================================================*/
+.tax-product_type .site-content {
+  height: 100vh; }
+
+.tax-product_type .content-area {
+  display: initial; }
+
+.tax-product_type .page-header {
+  padding-top: 10px;
+  text-align: center;
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 50px; }
+
+.tax-product_type .product-info {
+  text-align: center; }
+
 .page-id-128 .site-content {
   width: 100vw; }
 
