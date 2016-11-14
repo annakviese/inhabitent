@@ -6,7 +6,6 @@
  */
 
 get_header(); ?>
-    <p> taxonomy-product</p>
 	<div id="primary" class="content-area">
 		
 		<?php if ( have_posts() ) : ?>

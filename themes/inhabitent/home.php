@@ -6,7 +6,6 @@
  */
 
 get_header(); ?>
- 	<p> home.php </p>
 	<div id="primary" class="content-area">
 	
 		

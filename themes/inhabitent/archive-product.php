@@ -6,7 +6,6 @@
  */
 
 get_header(); ?>
-		<p>	archive-product.php</p>
 	<div id="primary" class="content-area">
 		<div class = "shop-wrapper">
 			<header class="page-header">

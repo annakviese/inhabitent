@@ -10,6 +10,10 @@
         .page-header {
             border-bottom: 2px dotted lightgray;
             margin-bottom: 5rem;
+            
+            h1 {
+                padding-top: 100px;
+            }
            
             a {
                 font-size: 1.3rem;
@@ -26,7 +30,6 @@
 }
 
 .shop-wrapper {
-    margin-top: 5rem;
     text-align: center;
 }
 
@@ -128,6 +131,9 @@
         text-align: center;
         border-bottom: $dashed-border; 
         margin-bottom: 50px; 
+        h1 {
+            margin-top: 6%;
+        }
     }
     .product-info {
         text-align: center;
