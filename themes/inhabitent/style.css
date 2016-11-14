@@ -717,12 +717,11 @@ input[type=submit] {
   margin-bottom: 5rem; }
   .post-type-archive-product .page-header a {
     font-size: 1.3rem;
-    padding: 1rem; }
+    padding: 0 1rem; }
 
 .post-type-archive-product .shop-stuff {
   display: inline-block;
-  font-size: 2rem;
-  padding: 1rem; }
+  padding: 0 1rem; }
 
 .shop-wrapper {
   margin-top: 5rem;
