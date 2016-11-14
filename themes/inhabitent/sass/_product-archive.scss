@@ -61,19 +61,49 @@
 }
 
 
-
+/*=============================================================
+* SINGLE PRODUCT
+=============================================================*/
 
 .single-product {
+
     .type-product {
+    margin: 8% 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     }
+
+    .social-buttons {
+        display: flex;
+        flex: 50%;
+        
+          .social-btn {
+            @include social-button;
+            margin-right: .8rem;
+            }
+    }
+        
+    
     
     .entry-header {
-        flex: 40% 0 0;
+        flex: 50% 0 0;
+        img {
+            width: 95%;
+            height: auto;
+            padding-top: 37px;
+        }
     }
     .content-wrapper {
-       flex: 40% 0 0;
+       flex: 50% 0 0;
+       h1 {
+           font-size: 2.5rem;
+           color: $brand-orange;
+           line-height: 1;
+       }
+       .price {
+           font-size: 1.5rem;
+           line-height: 1;
+       }
     }
 }
