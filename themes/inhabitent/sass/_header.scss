@@ -31,8 +31,12 @@
 }
 
 .header-search fieldset {
-	border: none;
-	
+		border: none;
+		
+		.icon-search {
+			display: inline;
+		}
+
 		button {
 			visibility: hidden;
 		}

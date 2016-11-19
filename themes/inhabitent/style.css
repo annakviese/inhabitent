@@ -857,83 +857,6 @@ input[type=submit] {
   -ms-flex-pack: center;
       justify-content: center; }
 
-.site-branding {
-  height: 50px;
-  width: 50px; }
-  .site-branding a {
-    height: 100px;
-    width: auto;
-    background-image: url("../../images/logos/inhabitent-logo-tent.svg");
-    background-size: contain;
-    background-repeat: no-repeat; }
-
-.page-id-128 .site-header, .page-id-4 .site-header {
-  background-color: transparent;
-  border: none; }
-  .page-id-128 .site-header a, .page-id-4 .site-header a {
-    color: white; }
-
-.page-id-128 .header-search fieldset input, .page-id-4 .header-search fieldset input {
-  background-color: transparent;
-  color: white; }
-  .page-id-128 .header-search fieldset input::-webkit-input-placeholder, .page-id-4 .header-search fieldset input::-webkit-input-placeholder {
-    color: #f0e4d1; }
-  .page-id-128 .header-search fieldset input::-moz-placeholder, .page-id-4 .header-search fieldset input::-moz-placeholder {
-    color: #f0e4d1; }
-  .page-id-128 .header-search fieldset input:-ms-input-placeholder, .page-id-4 .header-search fieldset input:-ms-input-placeholder {
-    color: #f0e4d1; }
-  .page-id-128 .header-search fieldset input::placeholder, .page-id-4 .header-search fieldset input::placeholder {
-    color: #f0e4d1; }
-
-.page-id-128 .header-search fieldset .fa, .page-id-4 .header-search fieldset .fa {
-  color: white; }
-
-.page-id-128 .site-branding, .page-id-4 .site-branding {
-  height: 50px;
-  width: 50px; }
-  .page-id-128 .site-branding a, .page-id-4 .site-branding a {
-    height: 100px;
-    width: auto;
-    background-image: url("../../images/logos/inhabitent-logo-tent-white.svg");
-    background-size: contain;
-    background-repeat: no-repeat; }
-
-.site-header {
-  width: 100%;
-  padding: 0 5% 0 10%;
-  height: 52px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-  border-bottom: 1px solid lightgrey;
-  position: fixed;
-  z-index: 999;
-  background-color: rgba(255, 255, 255, 0.6); }
-  .site-header a img {
-    margin-top: 3%;
-    width: 27%; }
-
-.header-search fieldset {
-  border: none; }
-  .header-search fieldset button {
-    visibility: hidden; }
-  .header-search fieldset .fa {
-    font-size: 1.2rem;
-    color: #248A83; }
-  .header-search fieldset input[type="search"] {
-    border: none;
-    width: 0px;
-    padding: 0;
-    text-transform: uppercase;
-    font-size: 1rem; }
-    .header-search fieldset input[type="search"]:focus {
-      outline: none; }
-
 .search-results .content-area .site-main {
   margin-top: 4.6%; }
 
@@ -1010,6 +933,85 @@ input[type=submit] {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.site-branding {
+  height: 50px;
+  width: 50px; }
+  .site-branding a {
+    height: 100px;
+    width: auto;
+    background-image: url("../../images/logos/inhabitent-logo-tent.svg");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+.page-id-128 .site-header, .page-id-4 .site-header {
+  background-color: transparent;
+  border: none; }
+  .page-id-128 .site-header a, .page-id-4 .site-header a {
+    color: white; }
+
+.page-id-128 .header-search fieldset input, .page-id-4 .header-search fieldset input {
+  background-color: transparent;
+  color: white; }
+  .page-id-128 .header-search fieldset input::-webkit-input-placeholder, .page-id-4 .header-search fieldset input::-webkit-input-placeholder {
+    color: #f0e4d1; }
+  .page-id-128 .header-search fieldset input::-moz-placeholder, .page-id-4 .header-search fieldset input::-moz-placeholder {
+    color: #f0e4d1; }
+  .page-id-128 .header-search fieldset input:-ms-input-placeholder, .page-id-4 .header-search fieldset input:-ms-input-placeholder {
+    color: #f0e4d1; }
+  .page-id-128 .header-search fieldset input::placeholder, .page-id-4 .header-search fieldset input::placeholder {
+    color: #f0e4d1; }
+
+.page-id-128 .header-search fieldset .fa, .page-id-4 .header-search fieldset .fa {
+  color: white; }
+
+.page-id-128 .site-branding, .page-id-4 .site-branding {
+  height: 50px;
+  width: 50px; }
+  .page-id-128 .site-branding a, .page-id-4 .site-branding a {
+    height: 100px;
+    width: auto;
+    background-image: url("../../images/logos/inhabitent-logo-tent-white.svg");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+.site-header {
+  width: 100%;
+  padding: 0 5% 0 10%;
+  height: 52px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: 1px solid lightgrey;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.6); }
+  .site-header a img {
+    margin-top: 3%;
+    width: 27%; }
+
+.header-search fieldset {
+  border: none; }
+  .header-search fieldset .icon-search {
+    display: inline; }
+  .header-search fieldset button {
+    visibility: hidden; }
+  .header-search fieldset .fa {
+    font-size: 1.2rem;
+    color: #248A83; }
+  .header-search fieldset input[type="search"] {
+    border: none;
+    width: 0px;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 1rem; }
+    .header-search fieldset input[type="search"]:focus {
+      outline: none; }
+
 /* Links */
 a {
   color: #248A83; }
