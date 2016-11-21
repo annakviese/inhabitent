@@ -5,14 +5,13 @@
 .site-footer {
     width: 100%;
     height: auto;
-
     background: url(../../images/dark-wood@2x.png);
-   
     padding: 2rem;
 
 }
 
 .footer-content{
+    font-family: $main-font-family;
     width: $content-width;
     margin: auto auto;
     display: flex;
@@ -20,6 +19,7 @@
 
     h3 {
         color: $brand-orange;
+        font-size: 1.2rem;
     }
     
     p {
@@ -27,14 +27,21 @@
     }
 
     .contact {
+        line-height: 1;
         flex: 20% 0 0;
 
         a {
             color: white;
+        &:hover {
+            text-decoration: underline;
         }
-        .phone a{
+        }
+        
+        .phone {
+            margin-bottom: .5em;
+            a {
             font-size: 1.2rem;
-            
+            }
         }
 
         .fa {
@@ -50,12 +57,13 @@
             }
 
             .fa {
-                font-size: 1.3rem;
-                padding-right: 5%;
+                font-size: 1.2rem;
+                margin-right: 5px;
             }
         }
 
     .business-hours {
+        line-height: 1;
         flex: 22% 0 0;
 
         span {
@@ -64,11 +72,11 @@
     }
     .footer-logo {
         flex: 40% 0 0;
-        padding-left: 10%;
-        padding-top: 5%;
         
         img {
-            width: 80%;
+            width: 60%;
+            margin-top: 5%;
+            margin-left: 40%;
         }
         
     }
