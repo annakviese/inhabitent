@@ -1,5 +1,5 @@
 /*!
-Theme Name: Inhabitent Theme
+Theme Name: Inhabitent
 Theme URI: http://underscores.me/
 Author: Anna Kviese
 Author URI: http://www.redacademy.com
@@ -7,8 +7,7 @@ Description: A custom theme for the Inhabitent Camping Supply Co.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:
-Text Domain: redAcademy
+Text Domain: inhabitent
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -976,25 +975,25 @@ input[type=submit] {
     background-repeat: no-repeat; }
 
 .site-header {
-  margin-top: 10px;
   width: 100%;
-  padding: 0% 5% 0.8% 10%;
-  height: 41px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
   border-bottom: 1px solid lightgrey;
   position: fixed;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.6); }
-  .site-header a img {
-    margin-top: 3%;
-    width: 27%; }
+  .site-header .header-nav {
+    padding: 1.55em 0;
+    width: 1120px;
+    margin: 0 auto;
+    height: 41px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center; }
+    .site-header .header-nav a img {
+      margin-top: 3%;
+      width: 27%; }
 
 .header-search fieldset {
   border: none;
@@ -1038,6 +1037,8 @@ a {
   .main-navigation li {
     margin-right: 1rem;
     text-transform: uppercase; }
+    .main-navigation li a :hover {
+      color: #f0e4d1; }
 
 ul {
   list-style: none;
@@ -1274,7 +1275,7 @@ a {
   padding: 2rem; }
 
 .footer-content {
-  font-family: "merriweather", serif;
+  padding: 2% 0;
   width: 1120px;
   margin: auto auto;
   display: -ms-flexbox;
@@ -1291,7 +1292,9 @@ a {
     -ms-flex: 20% 0 0;
         flex: 20% 0 0; }
     .footer-content .contact a {
-      color: white; }
+      color: white;
+      font-family: "merriweather", serif;
+      text-transform: lowercase; }
       .footer-content .contact a:hover {
         text-decoration: underline; }
     .footer-content .contact .phone {

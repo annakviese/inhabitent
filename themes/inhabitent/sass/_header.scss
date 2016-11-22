@@ -12,23 +12,26 @@
 }
 
 .site-header{
-	margin-top: 10px;
 	width: 100%;
-	padding: 0% 5% 0.8% 10%;
-	height: 41px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
 	border-bottom: 1px solid lightgrey;
 	position: fixed;
 	z-index: 999;
 	background-color: rgba(255, 255, 255, 0.6);
 
+.header-nav {
+	padding: 1.55em 0;
+	width: 1120px;
+    margin: 0 auto;
+	height: 41px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 		a img{
 			margin-top: 3%;
 			width: 27%;
 		}
+}
 }
 
 .header-search fieldset {

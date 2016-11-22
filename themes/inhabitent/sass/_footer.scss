@@ -11,7 +11,7 @@
 }
 
 .footer-content{
-    font-family: $main-font-family;
+    padding: 2% 0;
     width: $content-width;
     margin: auto auto;
     display: flex;
@@ -32,6 +32,9 @@
 
         a {
             color: white;
+            font-family: $main-font-family;
+            text-transform: lowercase;
+
         &:hover {
             text-decoration: underline;
         }
