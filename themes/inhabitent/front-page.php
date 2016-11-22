@@ -98,9 +98,8 @@ get_header(); ?>
                     </div> <!--right-->
 
                 </div> <!--right-side-->
-
-                <a href = "#" class="more-button"> More Adventures </a>
             </div> <!-- adventures -->
+            <a href = "#" class="more-button"> More Adventures </a>
          </section> <!-- adventure section -->
 			        
 	</div><!-- #secondary -->
