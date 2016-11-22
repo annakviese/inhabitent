@@ -12,5 +12,26 @@
     $(this).animate({width: 0});
   });
   
-})( jQuery );
 
+
+
+//changing header colors when scrolling past the banner 
+     
+ //Set Variables with Banner images 
+  var homeBanner = $("body").hasClass("home");
+  var aboutBanner = $("body").hasClass("page-id-128");
+ 
+ //when scrolling pass one of these banner images it will reverse the nav 
+  if(homeBanner || aboutBanner){
+    $(".site-header").addClass("reverse-site-header");
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      var height = $(window).height();
+      if (scroll >= height & (homeBanner|| aboutBanner)) {
+          $(".site-header").removeClass("reverse-site-header");
+      } else {
+          $(".site-header").addClass("reverse-site-header");
+      }
+    });
+  }
+})( jQuery );
