@@ -991,6 +991,7 @@ input[type=submit] {
     background-repeat: no-repeat; }
 
 .site-header {
+  top: 0;
   width: 100%;
   border-bottom: 1px solid lightgrey;
   position: fixed;
@@ -1010,6 +1011,9 @@ input[type=submit] {
     .site-header .header-nav a img {
       margin-top: 3%;
       width: 27%; }
+
+.logged-in .site-header {
+  top: 32px; }
 
 .header-search fieldset {
   border: none;

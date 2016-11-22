@@ -23,15 +23,16 @@
  
  //when scrolling pass one of these banner images it will reverse the nav 
   if(homeBanner || aboutBanner){
-    $(".site-header").addClass("reverse-site-header");
     $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      var height = $(window).height();
-      if (scroll >= height & (homeBanner|| aboutBanner)) {
-          $(".site-header").removeClass("reverse-site-header");
-      } else {
-          $(".site-header").addClass("reverse-site-header");
-      }
+      var height = $('banner-image').height();
+      if ($(this).scrollTop() > height) {
+      // if (scroll >= height & (homeBanner|| aboutBanner)) {
+        $(".site-header").css('background-color', 'rgba(0, 0, 0, 0.45)');
+        }
+      else {          
+        $(".site-header").css('background-color', 'transparent');
+       }
     });
-  }
+  };
+
 })( jQuery );
