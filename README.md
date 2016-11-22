@@ -22,9 +22,6 @@ The more I was working on this project, the more I've felt that there are so man
 
 #### Improvements 
 
-* Correct all the errors and warnings displayed by Theme Checker
-* Adjust some of the styles to be readable by Mozilla & IE
 * Great addition would be to make the theme responsive
-* Create more variable and mixins in scss and rename the existing ones
 * Add a working shopping cart 
 
