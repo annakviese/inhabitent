@@ -101,11 +101,13 @@
     .content-wrapper {
        flex: 50% 0 0;
        h1 {
+           padding-top: 8px;
            font-size: 2.5rem;
            color: $brand-orange;
            line-height: 1;
        }
        .price {
+           font-family: $accent-font-family;
            font-size: 1.5rem;
            line-height: 1;
        }
