@@ -6,7 +6,7 @@
  */
 
 ?>
-			</div><!-- #content -->
+			</div> <!--#content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="footer-content">
@@ -24,30 +24,33 @@
 							<p><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> </p>
 							<p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </p>
 							<p><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a> </p>
-						</p>
 						</div> <!-- social -->
 					</div> <!-- contact -->
+
 					<div class = "business-hours">
 						<h3>Business Hours</h3>
 						<p><span class="day">Monday-Friday:</span> 9am to 5pm</p>
 						<p><span class="day">Saturday:</span> 10am to 2pm</p>
 						<p><span class="day">Sunday:</span> Closed</p>
-
-					</div>
+					</div> <!--business hours -->
+				
+				
 					<div class = "footer-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                        		<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-text.svg'; ?>" class="logo" alt="Inhabitent company logo"/>
                    		</a>
-					</div>
-				</div>
+					</div><!--footer-logo-->
+
+				</div> <!--footer content -->	
 				
 				
 				<div class="site-info">
 					<!--<a href="<?php echo esc_url( 'https://inhabitent.org/' ); ?>"><?php printf( esc_html( 'Copyright &copy; 2016 Inhabitent' ), '' ); ?></a>-->
 					Copyright &copy; 2016 Inhabitent
 				</div><!-- .site-info -->
+
 			</footer><!-- #colophon -->
-		</div><!-- #page -->
+		</div> #page 
 
 		<?php wp_footer(); ?>
 

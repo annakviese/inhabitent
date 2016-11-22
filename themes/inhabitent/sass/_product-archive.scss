@@ -45,7 +45,8 @@
     justify-content: space-around;
 
         .product-post {
-        flex: 25% 0 0;
+        width: 25%;
+        /*flex: 25% 0 0;*/ /*didn't work on firefox*/
         border: 10px solid white;
 
         img {

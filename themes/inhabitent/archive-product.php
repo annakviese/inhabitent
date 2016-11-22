@@ -25,7 +25,7 @@ get_header(); ?>
 				</header><!-- .page-header -->
       
 
-		<div id="primary" class="archive-area">
+		<div class="archive-area">
 
 			<?php if ( have_posts() ) : ?>
 			<?php /* Start the Loop */ ?>

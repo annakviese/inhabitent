@@ -507,7 +507,7 @@ input[type=submit] {
     -ms-flex-pack: justify;
         justify-content: space-between; }
     .shopping .shop-stuff .shop-offers {
-      width: 20%;
+      width: 23%;
       -ms-flex: 23% 0 0;
           flex: 23% 0 0;
       padding: 1em 0.5em;
@@ -549,11 +549,14 @@ input[type=submit] {
 =============================================================*/
 .journal {
   height: 80vh;
-  width: 100%;
+  width: 1120px;
   margin: 0 auto; }
   .journal .journal-posts {
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    -ms-flex-direction: row;
+        flex-direction: row;
     /*flex-wrap: wrap;*/
     -ms-flex-pack: justify;
         justify-content: space-between; }
@@ -563,8 +566,8 @@ input[type=submit] {
       -ms-flex-direction: column;
           flex-direction: column;
       height: 430px;
-      -ms-flex: 32% 0 0;
-          flex: 32% 0 0;
+      width: 32%;
+      /*flex: 32% 0 0;*/
       position: relative;
       border: 1px solid #e1e1e1; }
       .journal .journal-posts .recent-posts .homedate {
@@ -751,8 +754,9 @@ input[type=submit] {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   .archive-area .product-post {
-    -ms-flex: 25% 0 0;
-        flex: 25% 0 0;
+    width: 25%;
+    /*flex: 25% 0 0;*/
+    /*didn't work on firefox*/
     border: 10px solid white; }
     .archive-area .product-post img {
       height: 240px; }
@@ -1433,6 +1437,7 @@ h3 {
   .single-post .comments-area {
     margin-top: 10%; }
     .single-post .comments-area .comment-list {
+      list-style: none;
       margin: 0;
       padding: 0; }
     .single-post .comments-area li {
