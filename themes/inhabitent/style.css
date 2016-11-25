@@ -789,7 +789,9 @@ input[type=submit] {
     /*didn't work on firefox*/
     border: 10px solid white; }
     .archive-area .product-post img {
-      height: 240px; }
+      height: 240px;
+      width: auto;
+      object-fit: cover; }
     .archive-area .product-post .product-thumbnail {
       border-color: #e1e1e1;
       border-width: 1px 1px 5px 1px;

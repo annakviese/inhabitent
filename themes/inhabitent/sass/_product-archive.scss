@@ -51,6 +51,8 @@
 
         img {
             height: 240px; 
+            width: auto;
+            object-fit: cover;
         }
         .product-thumbnail {
             border-color: #e1e1e1;
