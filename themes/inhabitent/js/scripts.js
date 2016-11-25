@@ -18,13 +18,13 @@
 //changing header colors when scrolling past the banner 
      
  //Set Variables with Banner images 
-  var homeBanner = $("body").hasClass("home");
-  var aboutBanner = $("body").hasClass("page-id-128");
+  var homeBanner=$("body").hasClass("home");
+  var aboutBanner=$("body").hasClass("page-id-128");
  
  //when scrolling pass one of these banner images it will reverse the nav 
   if(homeBanner || aboutBanner){
     $(window).scroll(function() {
-      var height = $('banner-image').height();
+      var height=$('banner-image').height();
       if ($(this).scrollTop() > height) {
       // if (scroll >= height & (homeBanner|| aboutBanner)) {
         $(".site-header").css('background-color', 'rgba(0, 0, 0, 0.45)');

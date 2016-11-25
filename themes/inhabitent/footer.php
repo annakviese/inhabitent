@@ -10,24 +10,24 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="footer-content">
-					<div class = "contact">
+					<div class="contact">
 						<h3>Contact Info</h3>
-						<p class = "email">
+						<p class="email">
 							<a href="info@inhabitent.com"><i class="fa fa-envelope" aria-hidden="true"></i> info@inhabitent.com</a>
 						</p>
 
-						<p class = "phone">
+						<p class="phone">
 							<a href="tel:778-456-7891"><i class="fa fa-phone" aria-hidden="true"></i> 778-456-7891</a>
 						</p>
 						
-						<div class = "social">
+						<div class="social">
 							<p><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> </p>
 							<p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </p>
 							<p><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a> </p>
 						</div> <!-- social -->
 					</div> <!-- contact -->
 
-					<div class = "business-hours">
+					<div class="business-hours">
 						<h3>Business Hours</h3>
 						<p><span class="day">Monday-Friday:</span> 9am to 5pm</p>
 						<p><span class="day">Saturday:</span> 10am to 2pm</p>
@@ -35,7 +35,7 @@
 					</div> <!--business hours -->
 				
 				
-					<div class = "footer-logo">
+					<div class="footer-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                        		<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-text.svg'; ?>" class="logo" alt="Inhabitent company logo"/>
                    		</a>

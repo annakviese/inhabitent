@@ -15,9 +15,9 @@
 		<?php endif; ?>
 		</header><!-- .entry-header -->
 
-		<div class = "content-wrapper">
+		<div class="content-wrapper">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			<span class = "price"> <?php echo CFS()->get( 'product_price' ); ?> </span>
+			<span class="price"> <?php echo CFS()->get( 'product_price' ); ?> </span>
 
 			<div class="entry-content">
 				<?php the_content(); ?>
@@ -29,14 +29,14 @@
 				
 			?>
 			</div><!-- .entry-content -->
-			<div class = "social-buttons">
-				<a href = "#" class = "social-btn">
+			<div class="social-buttons">
+				<a href="#" class="social-btn">
 					<i class="fa fa-facebook" aria-hidden="true"> like </i>
 				</a> 
-				<a href = "#" class = "social-btn">
+				<a href="#" class="social-btn">
 					<i class="fa fa-twitter" aria-hidden="true"> tweet </i>
 				</a> 
-				<a href = "#" class = "social-btn">
+				<a href="#" class="social-btn">
 					<i class="fa fa-pinterest" aria-hidden="true"> pin </i>
 				</a> 
 				</div> <!--social buttons -->

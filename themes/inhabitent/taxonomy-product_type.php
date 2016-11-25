@@ -20,16 +20,16 @@ get_header(); ?>
 			
 				<article class= id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
 
-					<div class = "archive-area">
+					<div class="archive-area">
         			<?php while ( have_posts() ) : the_post(); ?>
 					
-					<div class = "product-post">
-            			<div class = "product-thumbnail">
+					<div class="product-post">
+            			<div class="product-thumbnail">
 							<a href="<?php the_permalink() ; ?> "><?php the_post_thumbnail( 'large' ); ?></a>
 						</div>
          				
-						 <div class = "product-info">  
-         					<p class = "archive-title"> 
+						 <div class="product-info">  
+         					<p class="archive-title"> 
 								<?php the_title('<p class="archive-title">'); ?> 
               					<?php echo CFS()->get( 'product_price' ); ?> 
 							</p>

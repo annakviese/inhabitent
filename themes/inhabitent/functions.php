@@ -47,7 +47,7 @@ add_action( 'after_setup_theme', 'red_starter_setup' );
  */
 
 function red_starter_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'red_starter_content_width', 640 );
+	$GLOBALS['content_width']=apply_filters( 'red_starter_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
 
@@ -78,7 +78,7 @@ add_action( 'widgets_init', 'red_starter_widgets_init' );
  */
 function red_starter_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 	if ( file_exists( get_template_directory() . '/build/css/style.min.css' ) ) {
-		$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
+		$stylesheet_uri=$stylesheet_dir_uri . '/build/css/style.min.css';
 	}
 
 	return $stylesheet_uri;

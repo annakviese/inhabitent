@@ -17,14 +17,14 @@ get_header(); ?>
 			<!-- previous and next post navigation >-->
 			<!--<?php the_post_navigation(); ?>-->
 			
-			<div class = "social-buttons">
-				<a href = "#" class = "social-btn">
+			<div class="social-buttons">
+				<a href="#" class="social-btn">
 					<i class="fa fa-facebook" aria-hidden="true"> like </i>
 				</a> 
-				<a href = "#" class = "social-btn">
+				<a href="#" class="social-btn">
 					<i class="fa fa-twitter" aria-hidden="true"> tweet </i>
 				</a> 
-				<a href = "#" class = "social-btn">
+				<a href="#" class="social-btn">
 					<i class="fa fa-pinterest" aria-hidden="true"> pin </i>
 				</a> 
 			</div> <!--social buttons -->

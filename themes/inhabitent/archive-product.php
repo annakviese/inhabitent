@@ -7,17 +7,17 @@
 
 get_header(); ?>
 	<div id="primary" class="content-area">
-		<div class = "shop-wrapper">
+		<div class="shop-wrapper">
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
 
 			<!-- getting the product type names-->
-				<?php $terms = get_terms('product_type'); ?>
+				<?php $terms=get_terms('product_type'); ?>
 				<?php foreach ($terms as $term) : ?>
-				<div class = 'shop-stuff'> 
-					<?php $url = get_term_link ($term->slug , 'product_type'); ?>
+				<div class='shop-stuff'> 
+					<?php $url=get_term_link ($term->slug , 'product_type'); ?>
 					<p><a href="<?php echo $url ?>"><?php echo $term->name ?></a></p> 
 				</div>
 				<?php endforeach; ?>

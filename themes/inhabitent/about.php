@@ -7,7 +7,7 @@
 get_header(); ?>
         
 
-			 <section class = "about-hero">
+			 <section class="about-hero">
              <h1> About </h1>
             </section>
             
@@ -16,13 +16,13 @@ get_header(); ?>
 
             <div class= "about-text">
             <?php
-            $props = CFS()->get_field_info('our_story');
+            $props=CFS()->get_field_info('our_story');
             
             ?>
             <?php echo CFS()->get( 'our_story'); ?>
 
             <?php
-            $props = CFS()-> get_field_info('our_team');
+            $props=CFS()-> get_field_info('our_team');
            
             ?>
 
