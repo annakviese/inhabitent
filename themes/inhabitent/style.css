@@ -875,6 +875,67 @@ input[type=submit] {
 .tax-product_type .product-info {
   text-align: center; }
 
+.post-type-archive-adventure {
+  /* adventure post grid */ }
+  .post-type-archive-adventure .content-area {
+    display: block;
+    width: 1120px;
+    margin: 0 auto; }
+  .post-type-archive-adventure .page-header {
+    border-bottom: 2px dotted lightgray;
+    margin-bottom: 5rem; }
+    .post-type-archive-adventure .page-header h1 {
+      padding-top: 100px;
+      border: none;
+      text-align: center; }
+  .post-type-archive-adventure .adventure-posts-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 5%;
+    /* adventure post meta */ }
+    .post-type-archive-adventure .adventure-posts-grid img {
+      filter: brightness(70%);
+      height: 430px; }
+    .post-type-archive-adventure .adventure-posts-grid .adventure-post {
+      width: 50%;
+      position: relative;
+      border: 10px solid white; }
+    .post-type-archive-adventure .adventure-posts-grid .adventure-post-meta {
+      position: absolute;
+      top: 0px;
+      left: 2%; }
+      .post-type-archive-adventure .adventure-posts-grid .adventure-post-meta .post-title h3 a {
+        margin: 20px;
+        font-size: 2.5rem;
+        color: white;
+        font-family: "merriweather", serif;
+        font-weight: normal;
+        text-align: left;
+        text-transform: capitalize; }
+        .post-type-archive-adventure .adventure-posts-grid .adventure-post-meta .post-title h3 a:hover {
+          color: #f0e4d1; }
+      .post-type-archive-adventure .adventure-posts-grid .adventure-post-meta .button {
+        margin-left: 20px; }
+        .post-type-archive-adventure .adventure-posts-grid .adventure-post-meta .button a {
+          background-color: transparent;
+          border-radius: 0px;
+          padding: 0.35rem 0.7rem;
+          border: 1px solid #404040;
+          color: #404040;
+          width: 150px;
+          font-size: 0.9rem;
+          text-align: center; }
+          .post-type-archive-adventure .adventure-posts-grid .adventure-post-meta .button a:hover {
+            background-color: #248A83;
+            color: white;
+            border: none; }
+        .post-type-archive-adventure .adventure-posts-grid .adventure-post-meta .button a {
+          border: 1px solid white;
+          color: white; }
+
+/*post-type-archive-adventure */
 .page-id-128 .site-content {
   width: 100vw; }
 

@@ -101,6 +101,9 @@ function display_custom_archive_title ($title) {
 	if (is_post_type_archive ('product' )) {
 		$title="Shop Stuff";
 	}
+	else if (is_post_type_archive ('adventure' )) {
+		$title = "Adventures";
+	}
 	elseif(is_tax() ) {
         $title=single_term_title( '', false );
     }
@@ -108,7 +111,6 @@ return $title;
 }
 	
 add_filter( 'get_the_archive_title', 'display_custom_archive_title');
-
 
 /**
  * Customize excerpt length and style.

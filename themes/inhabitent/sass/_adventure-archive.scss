@@ -1,0 +1,63 @@
+.post-type-archive-adventure {
+
+    .content-area {
+        display: block;
+        width: $content-width;
+        margin: 0 auto;
+     }
+    .page-header {
+            border-bottom: 2px dotted lightgray;
+            margin-bottom: 5rem;
+            h1 {
+                padding-top: 100px;
+                border: none;
+                text-align: center;
+            }
+        }
+    
+    .adventure-posts-grid {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        img {
+                filter: brightness(70%);
+                height: 430px;
+            }
+
+        .adventure-post {
+            width: 50%;
+            position: relative;
+            border: $adventure-border;
+         }
+        .adventure-post-meta {
+            position: absolute;
+            top: 0px;
+            left: 2%;
+
+            .post-title {
+                h3 a{
+                    margin: 20px;
+                    font-size: 2.5rem;
+                    color: white;
+                    font-family: $main-font-family;
+                    font-weight: normal;
+                    text-align: left;
+                    text-transform: capitalize;  
+
+                    &:hover {
+                        color: $brand-yellow;
+                    }   
+                }
+            }
+
+            .button {
+                margin-left: 20px;
+                @include brand-button;
+                a {
+                    border: 1px solid white;
+                    color: white;
+                }
+            }
+        } /* adventure post meta */
+     } /* adventure post grid */
+} /*post-type-archive-adventure */
