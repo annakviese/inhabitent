@@ -64,41 +64,46 @@ get_header(); ?>
 <!--adventure section -->
         <section class="adventures-section">
             <h1>adventures</h1>
-                
-            <div class="adventures">  
 
-                <div class="left-box">
-                    <h1><a href="#">Getting Back to Nature in a Canoe </a></h1>
-                    <div class="button">
-                        <a href="#"> read more </a>
+            <div class="adventure-posts">
+                <?php $args=array( 'post_type' => 'adventure','numberposts' => '4','order' => 'DESC','post_status' => 'publish' );
+                    $adventure_posts = get_posts( $args );
+                    $adventure_posts_html = [];
+
+                    foreach ( $adventure_posts as $post ) : setup_postdata( $post );
+                    //add adventure post markup to output buffer object and push into array
+                        ob_start(); ?>
+                        <?php the_post_thumbnail( 'large' ); ?>
+
+                        <div class="adventure-meta">
+                            <h1><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h1>
+                            <div class="button"><a href="<?php the_permalink(); ?>">Read More</a></div>
+                        </div>
+
+                        <?php array_push( $adventure_posts_html, ob_get_clean() );
+                    endforeach; wp_reset_postdata(); ?>
+
+                <div class="adventures">  
+                    <div class="left-box">
+                        <?php echo $adventure_posts_html[0]; ?>
                     </div>
-                </div>
 
-                <div class="right-side">
-                    <div class="upper-right-box">
-                        <h2> <a href="#">A Night with Friends at the Beach</a></h2>
-                        <div class="button">
-                            <a href="#"> read more </a>
-                        </div>
-                    </div> <!-- upper-right-box-->
+                    <div class="right-side">
+                        <div class="upper-right-box">
+                            <?php echo $adventure_posts_html[1]; ?>
+                        </div> <!-- upper-right-box-->
 
-                    <div class="bottom-right-section">
-                        <div class="left">
-                            <h3>   <a href="#">Taking in the View at Big Mountain</a></h3>
-                            <div class="button">
-                                <a href="#"> read more </a>
-                            </div>
-                        </div> <!--left-->
+                        <div class="bottom-right-section">
+                            <div class="left">
+                                <?php echo $adventure_posts_html[2]; ?>
+                            </div> <!--left-->
 
-                    <div class="right">
-                        <h3> <a href="#">Star - Gazing at the Night Sky</a></h3>
-                        <div class="button">
-                            <a href="#"> read more </a>
-                        </div>
-                    </div> <!--right-->
+                        <div class="right">
+                            <?php echo $adventure_posts_html[3]; ?>
+                        </div> <!--right-->
 
-                </div> <!--right-side-->
-            </div> <!-- adventures -->
+                    </div> <!--right-side-->
+                </div> <!-- adventures -->
             <a href="#" class="more-button"> More Adventures </a>
          </section> <!-- adventure section -->
 			        
