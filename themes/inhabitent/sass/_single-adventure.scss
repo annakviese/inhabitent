@@ -1,0 +1,34 @@
+.single-adventure {
+    .site-content {
+        width: 100vw;
+    }
+    .content-area {
+        display: block;
+        width: $content-width;
+        margin: 0 auto;
+    }
+    h1 {
+        padding-top: 5%;
+        text-align: left;
+        color: $base-font-color;
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    img{
+        height: auto;
+        width: 100vw;
+    }
+    
+    .content-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+            /*posted by style */
+            .byline {
+                font-family: $accent-font-family;
+                text-align: left;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+        }
+    }
+}
