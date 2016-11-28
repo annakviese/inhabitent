@@ -102,7 +102,7 @@ function display_custom_archive_title ($title) {
 		$title="Shop Stuff";
 	}
 	else if (is_post_type_archive ('adventure' )) {
-		$title = "Adventures";
+		$title="Adventures";
 	}
 	elseif(is_tax() ) {
         $title=single_term_title( '', false );

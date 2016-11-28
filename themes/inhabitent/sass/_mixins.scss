@@ -107,6 +107,9 @@
 
         a {
             color: white;
+			&:hover {
+				color: $brand-yellow;
+			}
         }
     	}
     .header-search fieldset {

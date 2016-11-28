@@ -1104,6 +1104,8 @@ input[type=submit] {
   border: none; }
   .page-id-128 .site-header a, .page-id-4 .site-header a {
     color: white; }
+    .page-id-128 .site-header a:hover, .page-id-4 .site-header a:hover {
+      color: #f0e4d1; }
 
 .page-id-128 .header-search fieldset input, .page-id-4 .header-search fieldset input {
   background-color: transparent;

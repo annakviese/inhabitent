@@ -67,8 +67,8 @@ get_header(); ?>
 
             <div class="adventure-posts">
                 <?php $args=array( 'post_type' => 'adventure','numberposts' => '4','order' => 'DESC','post_status' => 'publish' );
-                    $adventure_posts = get_posts( $args );
-                    $adventure_posts_html = [];
+                    $adventure_posts=get_posts( $args );
+                    $adventure_posts_html=[];
 
                     foreach ( $adventure_posts as $post ) : setup_postdata( $post );
                     //add adventure post markup to output buffer object and push into array
@@ -104,7 +104,7 @@ get_header(); ?>
 
                     </div> <!--right-side-->
                 </div> <!-- adventures -->
-            <a href="#" class="more-button"> More Adventures </a>
+            <a href="<?php echo get_post_type_archive_link('adventure'); ?>" class="more-button"> More Adventures </a>
          </section> <!-- adventure section -->
 			        
 	</div><!-- #secondary -->
